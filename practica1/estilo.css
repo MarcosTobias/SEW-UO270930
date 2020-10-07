@@ -1,0 +1,83 @@
+
+/*001*/
+body {
+    background-color: #50006b;
+    color: white;
+    background-image: url("body_background.png");
+    text-align: justify;
+}
+
+/*001*/
+h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Arial Bold', sans-serif;
+    font-size: 3em;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 2em;
+    border-width: 6px;
+    border-color: black;
+    border-style: solid;
+    padding: 1em;
+    background-color: #4E8AF4;
+    background-image: url("h1_background.png");
+}
+
+/*001*/
+h2 {
+    margin-left: 15%;
+    margin-right: 65%;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    background-image: url("h2_background.png");
+    background-color: #8727E7;
+    color: black;
+    text-align: center;
+}
+
+/*001*/
+li {
+    margin-left: 20%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: larger;
+}
+
+/*001*/
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/*001*/
+table {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: larger;
+    text-align: center;
+    border-collapse: collapse;
+    width: 60%;
+    background-image: url("table_background.png");
+    background-color: #c2802f;
+    color: black;
+}
+
+/*001*/
+td, th {
+    border-style: solid;
+    border-width: 4px;
+    padding: 0.5em;
+    border-color: black;
+}
+
+/*001*/
+th {
+    height: 2em;
+}
