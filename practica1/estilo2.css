@@ -1,0 +1,89 @@
+/*001*/
+h1 {
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 0.5em;
+    padding: 1em;
+}
+
+nav {
+    display:flex;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav a {
+    margin-left: 15%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    overflow: visible;
+    display: inline-block;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+img {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+video {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4em;
+}
+
+figcaption {
+    margin-bottom: 2em;
+}
+
+/*001*/
+h2 {
+    margin-left: 15%;
+    margin-right: 65%;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+/*001*/
+li {
+    margin-left: 20%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/*001*/
+p {
+    position: relative;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/*001*/
+table {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 60%;
+}
+
+/*001*/
+td, th {
+    padding: 0.5em;
+}
+
+/*001*/
+th {
+    height: 2em;
+}
