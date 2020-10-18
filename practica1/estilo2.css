@@ -6,24 +6,24 @@ h1 {
     padding: 1em;
 }
 
+/*001*/
 nav {
-    display:flex;
     margin-right: 15%;
     margin-left: 15%;
-    padding: 0;
-    overflow: hidden;
 }
 
+/*002*/
 nav a {
-    margin-left: 15%;
+    margin-left: 5%;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    overflow: visible;
+    overflow: hidden;
     display: inline-block;
     margin-top: 0.25em;
     margin-bottom: 0.25em;
 }
 
+/*001*/
 img {
     width: 60%;
     height: auto;
@@ -32,6 +32,7 @@ img {
     margin-right: auto;
 }
 
+/*001*/
 video {
     width: 60%;
     height: auto;
@@ -41,6 +42,7 @@ video {
     margin-bottom: 4em;
 }
 
+/*001*/
 figcaption {
     margin-bottom: 2em;
 }

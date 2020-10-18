@@ -20,16 +20,19 @@ h1 {
     background-image: url("multimedia/h1_background.png");
 }
 
+/*001*/
 figcaption {
     text-align: center;
 }
 
+/*001*/
 nav {
     background-color: #333;
     text-align: center;
     color: white;
 }
 
+/*002*/
 nav a {
     text-align: center;
     background-color: #333;
