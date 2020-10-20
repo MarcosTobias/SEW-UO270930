@@ -2,19 +2,60 @@
 <html lang="es">
 <head>
  <!-- Datos que describen el documento -->
- <meta charset="UTF-8">
- <title>Comenzando</title>
+ <meta charset="UTF-8"/>
+ <meta name=application-name content='Review de Regreso al Futuro'/>
+ <meta name=author content='Marcos Tobias Muñiz'/>
+ <meta name=description content='Esta pagina consiste en una revision de la famosa pelicula de ciencia ficcion Regreso al Futuro'/>
 
- <link rel="stylesheet" type="text/css" href="estilo.css" />
+ <link rel="stylesheet" href="estilo.css"/>
+ <link rel="stylesheet" href="estilo2.css"/>
+
+ <title>Regreso al futuro</title>
+
 </head>
 <body>
- <!-- Datos con el contenido que aparece en el navegador -->
- <h1>¡Hola mundo!</h1>
- <a href="https://validator.w3.org/check?uri=referer">
-     <img src=" images/HTML5.png" alt=" HTML5 Válido!"
-     /></a>
-     <a href=" http://jigsaw.w3.org/css-validator/check/referer ">
-        <img src="images/CSS3.png"
-        alt="CSS Válido!" height="63" width="64"/></a>
-</body>
+    <h1>Regreso al futuro</h1>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="resumen.html">Resumen</a>
+        <a href="prot_music.html">Protagonistas y música</a>
+        <a href="secuelas.html">Secuelas</a>
+        <a href="referencias.html">Referencias</a>
+    </nav>
+ 
+    <section>
+        <h2>Sobre la película</h2>
+        <p>
+            Esta página web trata sobre la película de ciencia ficción Regreso al Futuro, publicada en cines por primera vez en 1985.
+            Comentaremos un poco de que trata la película, sus protagonistas y la banda sonora.
+        </p>
+        <p>
+            Aquí podemos ver el logo de la saga:
+        </p>
+        <figure>
+            <img alt="Imagen con el logo de la película" src="multimedia/bttf_logo.png"/>
+            <figcaption>Logo de Regreso al Futuro</figcaption>
+        </figure>
+
+
+    </section>
+    <section>
+        <h2>Tráiler</h2>
+    <p>
+        Tráiler de la película original Regreso al Futuro
+    </p>
+    
+    <video src="multimedia/trailer.mp4" controls preload="auto"></video>
+
+    </section>
+    <footer>
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img src=" multimedia/HTML5.png" alt=" HTML5 Válido!">
+        </a>
+        <a href=" http://jigsaw.w3.org/css-validator/check/referer ">
+               <img src="multimedia/CSS3.png" alt="CSS Válido!" height="63 ! important" width="64 ! important"/>
+        </a>
+    </footer>
+</body>     
 </html>
