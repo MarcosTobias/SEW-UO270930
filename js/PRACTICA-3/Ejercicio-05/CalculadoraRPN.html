@@ -6,77 +6,77 @@
     <link rel="stylesheet" href="Calculadora.css"/>
     <script src="Calculadora.js"></script>
 </head>
-<body>
+<body lang="es">
     <h1>Calculadora RPN</h1>
 
-    <section>
-    <div id='pila'>
+    <article lang="es">
+    <div id='pila' lang="es">
         <ol reversed>
             <li>La pila está vacía</li>
         </ol>
     </div>
-    <div>
+    <div lang="es">
         <p id='screen'>
             
         </p>
     </div>
     
-    <div>
+    <div lang="es">
         <div>
-            <div><input type="button" value="sin" onclick="calculadora.sin()" /></div>
-            <div><input type="button" value="cos" onclick="calculadora.cos()" /></div>
-            <div><input type="button" value="tan" onclick="calculadora.tan()" /></div>
+            <div><button onclick="calculadora.sin()">sin</button></div>
+            <div><button onclick="calculadora.cos()">cos</button></div>
+            <div><button onclick="calculadora.tan()">tan</button></div>
         </div>
         <div>
-            <div><input type="button" value="asin" onclick="calculadora.asin()" /></div>
-            <div><input type="button" value="acos" onclick="calculadora.acos()" /></div>
-            <div><input type="button" value="atan" onclick="calculadora.atan()" /></div>
-            <div><input type="button" value="eˣ" onclick="calculadora.exp()" /></div>
-            <div><input type="button" value="π" onclick="calculadora.pi()" /></div>
+            <div><button onclick="calculadora.asin()">asin</button></div>
+            <div><button onclick="calculadora.acos()">acos</button></div>
+            <div><button onclick="calculadora.atan()">atan</button></div>
+            <div><button onclick="calculadora.exp()">eˣ</button></div>
+            <div><button onclick="calculadora.pi()">π</button></div>
         </div>
         <div>
-            <div><input type="button" value="x²" onclick="calculadora.square()" /></div>
-            <div><input type="button" value="1/x" onclick="calculadora.oneOverX()" /></div>
-            <div><input type="button" value="|x|" onclick="calculadora.module()" /></div>
-            <div><input type="button" value="e" onclick="calculadora.e()" /></div>
-            <div><input type="button" value="C" onclick="calculadora.borrar()" /></div>
+            <div><button onclick="calculadora.square()">x²</button></div>
+            <div><button onclick="calculadora.oneOverX()">1/x</button></div>
+            <div><button onclick="calculadora.module()">|x|</button></div>
+            <div><button onclick="calculadora.e()">e</button></div>
+            <div><button onclick="calculadora.borrar()">C</button></div>
         </div>
         <div>
-            <div><input type="button" value="exp" onclick="calculadora.exponential()" /></div>
-            <div><input type="button" value="mod" onclick="calculadora.remainder()" /></div>
-            <div><input type="button" value="²√x" onclick="calculadora.sqrt()" /></div>
-            <div><input type="button" value="n!" onclick="calculadora.factorial()" /></div>
-            <div><input type="button" value="/" onclick="calculadora.division()" /></div>
+            <div><button onclick="calculadora.exponential()">exp</button></div>
+            <div><button onclick="calculadora.remainder()">mod</button></div>
+            <div><button onclick="calculadora.sqrt()">²√x</button></div>
+            <div><button onclick="calculadora.factorial()">n!</button></div>
+            <div><button onclick="calculadora.division()">/</button></div>
         </div>
         <div>
-            <div><input type="button" value="xʸ" onclick="calculadora.pow()" /></div>
-            <div><input type="button" value="7" onclick="calculadora.digitos(7)" /></div>
-            <div><input type="button" value="8" onclick="calculadora.digitos(8)" /></div>
-            <div><input type="button" value="9" onclick="calculadora.digitos(9)" /></div>
-            <div><input type="button" value="*" onclick="calculadora.multiplicacion()" /></div>
+            <div><button onclick="calculadora.pow()">xʸ</button></div>
+            <div><button onclick="calculadora.digitos(7)">7</button></div>
+            <div><button onclick="calculadora.digitos(8)">8</button></div>
+            <div><button onclick="calculadora.digitos(9)">9</button></div>
+            <div><button onclick="calculadora.multiplicacion()">*</button></div>
         </div>
         <div>
-            <div><input type="button" value="10ˣ" onclick="calculadora.pow10()" /></div>
-            <div><input type="button" value="4" onclick="calculadora.digitos(4)" /></div>
-            <div><input type="button" value="5" onclick="calculadora.digitos(5)" /></div>
-            <div><input type="button" value="6" onclick="calculadora.digitos(6)" /></div>
-            <div><input type="button" value="-" onclick="calculadora.resta()" /></div>
+            <div><button onclick="calculadora.pow10()">10ˣ</button></div>
+            <div><button onclick="calculadora.digitos(4)">4</button></div>
+            <div><button onclick="calculadora.digitos(5)">5</button></div>
+            <div><button onclick="calculadora.digitos(6)">6</button></div>
+            <div><button onclick="calculadora.resta()">-</button></div>
         </div>
         <div>
-            <div><input type="button" value="log" onclick="calculadora.log10()" /></div>
-            <div><input type="button" value="1" onclick="calculadora.digitos(1)" /></div>
-            <div><input type="button" value="2" onclick="calculadora.digitos(2)" /></div>
-            <div><input type="button" value="3" onclick="calculadora.digitos(3)" /></div>
-            <div><input type="button" value="+" onclick="calculadora.suma()" /></div>
+            <div><button onclick="calculadora.log10()">log</button></div>
+            <div><button onclick="calculadora.digitos(1)">1</button></div>
+            <div><button onclick="calculadora.digitos(2)">2</button></div>
+            <div><button onclick="calculadora.digitos(3)">3</button></div>
+            <div><button onclick="calculadora.suma()">+</button></div>
         </div>
         <div>
-            <div><input type="button" value="ln" onclick="calculadora.ln()" /></div>
-            <div><input type="button" value="³√x" onclick="calculadora.cbrt()" /></div>
-            <div><input type="button" value="0" onclick="calculadora.digitos(0)" /></div>
-            <div><input type="button" value="." onclick="calculadora.punto()" /></div>
-            <div><input type="button" value="enter" onclick="calculadora.enter()" /></div>
+            <div><button onclick="calculadora.ln()">ln</button></div>
+            <div><button onclick="calculadora.cbrt()">³√x</button></div>
+            <div><button onclick="calculadora.digitos(0)">0</button></div>
+            <div><button onclick="calculadora.punto()">.</button></div>
+            <div><button onclick="calculadora.enter()">enter</button></div>
         </div>
     </div>
-</section>
+</article>
 </body>
 </html>
