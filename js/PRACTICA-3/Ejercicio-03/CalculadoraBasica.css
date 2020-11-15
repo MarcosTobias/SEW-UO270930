@@ -61,10 +61,11 @@ h1 {
     padding: 1em;
 }
 
-h4 {
+h2 {
     margin-left: 1em;
     margin-top: 0;
     margin-bottom: 0;
+    font-size: smaller;
 }
 
 section {
