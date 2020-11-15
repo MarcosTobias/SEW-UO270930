@@ -1,0 +1,25 @@
+mc	-
+sin	-
+cos -
+tan	-
+asin-
+acos-
+atan-
+ex	-
+pi	-
+e	-
+del	-
+x2	-
+1/x	-
+|x|	-
+exp	-
+mod	-
+sqrt-
+)	-
+(	-
+n!	-
+x^y	-
+10^x-
+log	-
+ln	-
++/-

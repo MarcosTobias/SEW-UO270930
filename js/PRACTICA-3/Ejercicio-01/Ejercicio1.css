@@ -1,0 +1,27 @@
+h1 {
+    color: darkgreen;
+    text-align: center;
+}
+
+h2 {
+    color: magenta;
+    text-align: center;
+}
+
+h3 {
+    color: blue;
+    text-align: center;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-color: coral;
+}
+
+p {
+    color: black;
+}

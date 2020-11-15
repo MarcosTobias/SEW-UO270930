@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="CalculadoraBasica.css"/>
+    <script src="CalculadoraBasica.js"></script>
+</head>
+<body>
+    <h1>Calculadora básica</h1>
+
+    <section>
+    <p>
+        <input type="text" id="screen" disabled value="0"/>
+    </p>
+    
+    <div>
+        <div>
+            <div><input type="button" value="mrc" onclick="calculadora.mrc()" /></div>
+            <div><input type="button" value="m-" onclick="calculadora.mMenos()" /></div>
+            <div><input type="button" value="m+" onclick="calculadora.mMas()" /></div>
+            <div><input type="button" value="/" onclick="calculadora.division()" /></div>
+        </div>
+        <div>
+            <div><input type="button" value="7" onclick="calculadora.digitos(7)" /></div>
+            <div><input type="button" value="8" onclick="calculadora.digitos(8)" /></div>
+            <div><input type="button" value="9" onclick="calculadora.digitos(9)" /></div>
+            <div><input type="button" value="*" onclick="calculadora.multiplicacion()" /></div>
+        </div>
+        <div>
+            <div><input type="button" value="4" onclick="calculadora.digitos(4)" /></div>
+            <div><input type="button" value="5" onclick="calculadora.digitos(5)" /></div>
+            <div><input type="button" value="6" onclick="calculadora.digitos(6)" /></div>
+            <div><input type="button" value="-" onclick="calculadora.resta()" /></div>
+        </div>
+        <div>
+            <div><input type="button" value="1" onclick="calculadora.digitos(1)" /></div>
+            <div><input type="button" value="2" onclick="calculadora.digitos(2)" /></div>
+            <div><input type="button" value="3" onclick="calculadora.digitos(3)" /></div>
+            <div><input type="button" value="+" onclick="calculadora.suma()" /></div>
+        </div>
+        <div>
+            <div><input type="button" value="0" onclick="calculadora.digitos(0)" /></div>
+            <div><input type="button" value="." onclick="calculadora.punto()" /></div>
+            <div><input type="button" value="C" onclick="calculadora.borrar()" /></div>
+            <div><input type="button" value="=" onclick="calculadora.igual()" /></div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
