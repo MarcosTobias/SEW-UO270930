@@ -1,1 +1,1 @@
-document.write("Idioma: " + infoNavegador.idioma);
+document.write(infoNavegador.idioma);
