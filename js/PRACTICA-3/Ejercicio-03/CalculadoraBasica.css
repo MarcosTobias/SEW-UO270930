@@ -29,10 +29,12 @@ div input {
 
 div input:hover {
     background-color: rgb(192, 190, 189);
+    color: black;
 }
 
 div input:active {
     background-color: rgb(143, 139, 136);
+    color: black;
     transform: translateY(4px);
 }
 
@@ -56,8 +58,13 @@ p input {
 h1 {
     margin: 0 auto;
     text-align: center;
-    margin-top: 3em;
     padding: 1em;
+}
+
+h4 {
+    margin-left: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 section {
@@ -66,6 +73,7 @@ section {
     margin: 0 auto;
     padding: 1em;
     background-color: grey;
+    color: black;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -75,6 +83,8 @@ section {
 }
 
 body {
+    margin-top: 5em;
     background-color: rgb(245, 189, 167);
+    color: black;
 }
 

@@ -1,20 +1,24 @@
 body {
     background-color: aliceblue;
+    color: black;
     margin-left: 15%;
     margin-right: 15%;
 }
 
 h1 {
     color: brown;
+    background-color: aliceblue;
     text-align: center;
 }
 
 h2 {
     color: darkslateblue;
+    background-color: aliceblue;
     text-align: center;
 }
 
 p {
     color: grey;
+    background-color: aliceblue;
     margin-top: 3em;
 }

@@ -1,27 +1,33 @@
 h1 {
     color: darkgreen;
+    background-color: coral;
     text-align: center;
 }
 
 h2 {
     color: magenta;
+    background-color: coral;
     text-align: center;
 }
 
 h3 {
     color: blue;
+    background-color: coral;
     text-align: center;
 }
 
 h4 {
     color: white;
+    background-color: coral;
     text-align: center;
 }
 
 body {
     background-color: coral;
+    color: black;
 }
 
 p {
     color: black;
+    background-color: coral;
 }
