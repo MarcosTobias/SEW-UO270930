@@ -29,10 +29,12 @@ div button {
 
 div button:hover {
     background-color: rgb(192, 190, 189);
+    color: black;
 }
 
 div button:active {
     background-color: rgb(143, 139, 136);
+    color: black;
     transform: translateY(4px);
 }
 
@@ -102,5 +104,10 @@ article {
 
 body {
     background-color: rgb(245, 189, 167);
+    color:black;
+}
+
+h2 {
+    display: none;
 }
 
