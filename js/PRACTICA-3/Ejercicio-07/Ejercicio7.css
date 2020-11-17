@@ -1,0 +1,103 @@
+
+/*001*/
+body {
+    background-color: #50006b;
+    color: white;
+    background-image: url("../../../multimedia/body_background.png");
+    text-align: justify;
+}
+
+/*001*/
+h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Arial Bold', sans-serif;
+    font-size: 3em;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.2em;
+    background-color: #4E8AF4;
+    background-image: url("../../../multimedia/h1_background.png");
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 0.5em;
+    padding: 1em;
+}
+
+button { 
+    margin: 0 auto;
+    height: 2em;
+    display: block;
+    margin-bottom: 2em;
+}
+
+input {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 2em;
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/*001*/
+h2 {
+    background-image: url("../../../multimedia/h2_background.png");
+    background-color: #8727E7;
+    color: black;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+/*001*/
+li {
+    font-size: 1em;
+    margin-left: 20%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/*001*/
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    position: relative;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/*001*/
+table {
+    font-size: 1em;
+    text-align: center;
+    border-collapse: collapse;
+    background-image: url("../../../multimedia/table_background.png");
+    background-color: #f1cea3;
+    color: black;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 60%;
+}
+
+/*001*/
+td, th {
+    border-style: solid;
+    border-width: 0.4em;
+    font-size: 1.5em;
+    border-color: black;
+    padding: 1.5em;
+}
+
+th {
+    height: 2em;
+}

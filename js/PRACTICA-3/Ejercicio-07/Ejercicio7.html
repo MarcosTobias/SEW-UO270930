@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+ <!-- Datos que describen el documento -->
+ <meta charset="UTF-8"/>
+ <meta name=application-name content='Review de Regreso al Futuro'/>
+ <meta name=author content='Marcos Tobias Muñiz'/>
+ <meta name=description content='Musica y protagonistass'/>
+
+ <link rel="stylesheet" href="Ejercicio7.css"/>
+ <script src="Ejercicio7.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+ <title>Ejercicio 7</title>
+
+</head>
+<body>
+    <h1>Regreso al futuro</h1>
+
+    <section id="resumen">
+        <h2>Resumen</h2>
+    <p>
+        Back to the Future (titulada Regreso al futuro en España) es una película estadounidense de ciencia ficción y comedia de 1985 dirigida y escrita por Robert Zemeckis —Bob Gale también colaboró como guionista—, producida por Steven Spielberg y protagonizada por Michael J. Fox, Christopher Lloyd, Lea Thompson, Crispin Glover y Thomas F. Wilson. 
+        Relata las aventuras de Marty McFly, un adolescente rebelde e impulsivo que vive con sus padres y viaja accidentalmente al pasado desde 1985 su época, a 1955 la época en que sus padres se conocieron. 
+        Eventualmente, cambia los hechos específicos de la línea original de tiempo en que sus padres se conocieron y enamoraron. Debido a esto, Marty debe recurrir a la ayuda del Dr. Emmett Brown para reunir a sus padres de nuevo, asegurando su propia existencia y la de sus hermanos.
+    </p>
+    <p>
+        Tras su estreno, Back to the Future se convirtió en la película más exitosa de ese año, al recaudar más de 380 millones USD en todo el mundo y obtener críticas positivas en su gran mayoría, quienes elogiaron las actuaciones de Fox, Lloyd, Thompson, Glover y Wilson, el guion, la Banda Sonora de Silvestri, las canciones de Huey Lewis & The News, la dirección de Zemeckis, el maquillaje y los efectos visuales .
+        Asimismo, se hizo acreedora a un premio Hugo en la categoría de «Mejor producción dramática» y un galardón Saturn como «Mejor película de ciencia ficción», además de recibir nominaciones a los premios Óscar y Globos de oro.
+    </p>
+    <p id="ampliar">
+        En 1989, se lanzó un videojuego basado en la primera película desarrollado por Beam Software y distribuido por LJN para la consola NES (Nintendo Entertainment System). 
+        El juego fue criticado tanto por su jugabilidad como por el hecho de que no tenía demasiada relación con la película. 
+        Se hizo una secuela de este mismo juego ligeramente superior para la misma consola.
+        
+    </p>
+    <label for="input">Añadir texto:</label>
+    <input type="text" id="input" name="input"/>
+    <button onclick="ocultor.actualizarParrafo()">Actualizar parrafo</button>
+    </section>
+
+    <button onclick="ocultor.ocultarResumen()">Mostrar/Ocultar resumen</button>
+
+    <section id="protagonistas">
+    <h2>Protagonistas</h2>
+    <ul id="lista">
+        <li lang="en">Michael J. Fox</li>
+        <li lang="en">Christopher Lloyd</li>
+        <li lang="en">Crispin Glover</li>
+        <li lang="en">Lea Thompson</li>
+        <li lang="en">Thomas F. Wilson</li>
+    </ul>
+    <label for="input">Añadir protagonistas:</label>
+    <input type="text" id="inputP" name="input"/>
+    <button onclick="ocultor.actualizarLista()">Actualizar lista</button>
+    </section>
+
+    <button onclick="ocultor.ocultarProtagonistas()">Mostrar/Ocultar protagonistas</button>
+
+    <section id="bandaSonora">
+    <h2>Banda Sonora</h2>
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Duración</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://youtu.be/teIjLbHOvZE" target="_blank" hreflang="en">«The Power of Love»</a></td>
+                <td>3:43</td>
+            </tr>
+            <tr>
+                <td><a href="https://youtu.be/uLPVI7HBQSQ" target="_blank" hreflang="en">«Time Bomb Town»</a></td>
+                <td>2:45</td>
+            </tr>
+            <tr>
+                <td><a href="https://youtu.be/e8TZbze72Bc" target="_blank" hreflang="en">«Back to the Future»</a></td>
+                <td>3:17</td>
+            </tr>
+            <tr>
+                <td><a href="https://youtu.be/sE7QQCsE2TQ" target="_blank" hreflang="en">«Heaven Is One Step Away»</a></td>
+                <td>4:08</td>
+            </tr>
+            <tr>
+                <td><a href="https://youtu.be/vHxFa08XE3w" target="_blank" hreflang="en">«Back in Time»</a></td>
+                <td>4:17</td>
+            </tr>
+            <tr>
+                <td><a href="https://youtu.be/26u5goxTHbw" target="_blank" lang="en">«Back to the Future Overture»</a></td>
+                <td>8:16</td>
+            </tr>
+            <tr>
+                <td><a href="https://youtu.be/C9_J7dObJlw" target="_blank" lang="en">«The Wallflower (Dance With Me Henry)»</a></td>
+                <td>2:41</td>
+            </tr>
+            <tr>
+                <td><a href="https://youtu.be/X12DY8vMpTQ" target="_blank" lang="en">«Night Train»</a></td>
+                <td>2:15</td>
+            </tr>
+            <tr>
+                <td><a href="https://youtu.be/6yY93xHao3E" target="_blank" lang="en">«Earth Angel»</a></td>
+                <td>2:59</td>
+            </tr>
+            <tr>
+                <td><a href="https://youtu.be/RelL4BS2lEQ" target="_blank" lang="en">«Johnny B. Goode»</a></td>
+                <td>3:05</td>
+            </tr>
+        </tbody>
+    </table>
+    <button onclick="ocultor.borrarUltimaFila()">Borrar última fila</button>
+    <label for="input">Filas + columnas:</label>
+    <input type="text" id="filasColumnas" name="filasColumnas" disabled placeholder="0"/>
+    <button onclick="ocultor.sumarFilasColumnas()">Sumar filas y columnas</button>
+    </section>
+
+    <button onclick="ocultor.ocultarBandaSonora()">Mostrar/Ocultar banda sonora</button>
+    
+    <button onclick="ocultor.recorrerDOM()">Mostrar información elementos</button>
+</body>
+</html>
