@@ -1,0 +1,68 @@
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+article {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px;
+}
+
+body {
+    background-color: rgb(245, 189, 167);
+    color:black;
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+    color: white;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+/*002*/
+nav a {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    font-size: large;
+    text-decoration: none;
+    margin-left: 5%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+div {
+    width: 70%;
+    font-size: 20px;
+    text-align: right;
+    margin-top: 2em;
+}
+
+input {
+    height: 2em;
+}
+
+select {
+    height: 2em;
+    width: 13.2em;
+}
+
+button {
+    vertical-align: center;
+    height: 2em;
+    width: 13.2em;
+}
+
+
+

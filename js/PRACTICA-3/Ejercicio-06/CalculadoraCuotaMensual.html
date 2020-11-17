@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="CalculadoraFinanciera.css"/>
+    <script src="CalculadoraFinanciera.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="CalculadoraCuotaMensual.html">Calcular cuota mensual</a>
+        <a href="CalculadoraIntereses.html">Calcular intereses</a>
+    </nav>
+
+    <article lang="es">
+        <h1>Calculadora de cuotas mensuales</h1>
+
+        <div>
+            <label for="prestado">Importe prestado:</label>
+            
+            <input type="text" id="prestado" placeholder="1000" name="importe prestado"/>
+        </div>
+
+        <div>
+            <label for="años">Años:</label>
+            <input type="text" id="años" placeholder="1" name="años"/>
+        </div>
+
+        <div>
+            <label for="iAnual">Interés anual:</label>
+            <input type="text" id="iAnual" placeholder="0.05" name="interes anual"/>
+        </div>
+
+        <div>
+            <button onclick="calculadora.calcularCuotaMensual()">Calcular</button>
+        </div>
+
+        <div>
+            <label for="cuota">Cuota mensual:</label>
+            <input type="text" disabled id="cuota" placeholder="0" name="cuota mensual"/>
+        </div>
+    
+    
+
+</article>
+</body>
+</html>
