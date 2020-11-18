@@ -14,10 +14,6 @@ class Meteo {
             url: this.url,
             method: 'GET',
             success: function(datos){
-                    $("pre").text(JSON.stringify(datos, null, 2));
-                
-                    //PresentaciÃ³n de los datos contenidos en JSON
-                    
                     var stringDatos = "<ul><li>Ciudad: " + datos.name + "</li>";
                         stringDatos += "<li>País: " + datos.sys.country + "</li>";
                         stringDatos += "<li>Latitud: " + datos.coord.lat + " grados</li>";
@@ -40,15 +36,22 @@ class Meteo {
                     $("p").html(stringDatos);
                 },
             error:function(){
-                $("h3").html("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>"); 
                 $("h4").remove();
-                $("pre").remove();
                 $("p").remove();
                 }
         });
     }
-    
+    crearElemento(tipoElemento, texto, insertarAntesDe){
+        // Crea un nuevo elemento modificando el Ã¡rbol DOM
+        // El elemnto creado es de 'tipoElemento' con un 'texto' 
+        // El elemnto se coloca antes del elemnto 'insertarAntesDe'
+        var elemento = document.createElement(tipoElemento); 
+        elemento.innerHTML = texto;
+        $(insertarAntesDe).before(elemento);
+    }
     verJSON(){
+        this.crearElemento("h4","Datos","footer"); // Crea un elemento con DOM 
+        this.crearElemento("p","","footer"); // Crea un elemento con DOM para los datos obtenidos con JSON
         this.cargarDatos();
         $("button").attr("disabled","disabled");
     }
