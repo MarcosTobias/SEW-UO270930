@@ -43,7 +43,7 @@ class Meteo {
     crearElemento(tipoElemento, texto, insertarAntesDe){
         var elemento = document.createElement(tipoElemento); 
         elemento.innerHTML = texto;
-        $(insertarAntesDe).before(elemento);
+        $("h2").before(elemento);
     }
     verJSON(){
         this.crearElemento("h4","Datos","#cuenca"); // Crea un elemento con DOM 
