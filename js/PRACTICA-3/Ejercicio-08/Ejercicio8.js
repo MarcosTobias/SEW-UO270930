@@ -1,30 +1,30 @@
 class Meteo {
     constructor(){
-    }
-
-    getUrlFor(ciudad) {
-        this.apikey = "290fd3ced9bb2176b491526dd1208f09";
-        this.ciudad = ciudad;
+        this.apikey = "47b790fd0fc41878c80c57c9846132cb";
+        this.ciudad = "Oviedo";
         this.codigoPais = "ES";
         this.unidades = "&units=metric";
         this.idioma = "&lang=es";
         this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
-        this.correcto = "Â¡Todo correcto! JSON recibido de <a href='http://openweathermap.org'>OpenWeatherMap</a>"
+        this.correcto = "¡Todo correcto! JSON recibido de <a href='http://openweathermap.org'>OpenWeatherMap</a>"
     }
-
-    cargarDatos(ciudad){
+    cargarDatos(){
         $.ajax({
             dataType: "json",
-            url: this.getUrlFor(ciudad),
+            url: this.url,
             method: 'GET',
             success: function(datos){
+                    $("pre").text(JSON.stringify(datos, null, 2));
+                
+                    //PresentaciÃ³n de los datos contenidos en JSON
+                    
                     var stringDatos = "<ul><li>Ciudad: " + datos.name + "</li>";
-                        stringDatos += "<li>Paí­s: " + datos.sys.country + "</li>";
+                        stringDatos += "<li>País: " + datos.sys.country + "</li>";
                         stringDatos += "<li>Latitud: " + datos.coord.lat + " grados</li>";
                         stringDatos += "<li>Longitud: " + datos.coord.lon + " grados</li>";
                         stringDatos += "<li>Temperatura: " + datos.main.temp + " grados Celsius</li>";
                         stringDatos += "<li>Temperatura máxima: " + datos.main.temp_max + " grados Celsius</li>";
-                        stringDatos += "<li>Temperatura mínima: " + datos.main.temp_min + " grados Celsius</li>";
+                        stringDatos += "<li>Temperatura mí­nima: " + datos.main.temp_min + " grados Celsius</li>";
                         stringDatos += "<li>Presión: " + datos.main.pressure + " milibares</li>";
                         stringDatos += "<li>Humedad: " + datos.main.humidity + " %</li>";
                         stringDatos += "<li>Amanece a las: " + new Date(datos.sys.sunrise *1000).toLocaleTimeString() + "</li>";
@@ -40,12 +40,17 @@ class Meteo {
                     $("p").html(stringDatos);
                 },
             error:function(){
-                $("h3").html("Error al obtener el JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>"); 
+                $("h3").html("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>"); 
                 $("h4").remove();
                 $("pre").remove();
                 $("p").remove();
                 }
         });
+    }
+    
+    verJSON(){
+        this.cargarDatos();
+        $("button").attr("disabled","disabled");
     }
 }
 var meteo = new Meteo();
