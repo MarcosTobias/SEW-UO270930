@@ -6,7 +6,6 @@ class Meteo {
         this.unidades = "&units=metric";
         this.idioma = "&lang=es";
         this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
-        this.correcto = "¡Todo correcto! JSON recibido de <a href='http://openweathermap.org'>OpenWeatherMap</a>"
     }
     cargarDatos(){
         $.ajax({
@@ -42,9 +41,6 @@ class Meteo {
         });
     }
     crearElemento(tipoElemento, texto, insertarAntesDe){
-        // Crea un nuevo elemento modificando el Ã¡rbol DOM
-        // El elemnto creado es de 'tipoElemento' con un 'texto' 
-        // El elemnto se coloca antes del elemnto 'insertarAntesDe'
         var elemento = document.createElement(tipoElemento); 
         elemento.innerHTML = texto;
         $(insertarAntesDe).before(elemento);
