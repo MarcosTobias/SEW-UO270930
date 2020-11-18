@@ -37,7 +37,7 @@ class Meteo {
                         stringDatos += "<li>Visibilidad: " + datos.visibility + " metros</li>";
                         stringDatos += "<li>Nubosidad: " + datos.clouds.all + " %</li></ul>";
                     
-                    $(ciudad).html(stringDatos);
+                    $("p").html(stringDatos);
                 },
             error:function(){
                 $("h3").html("Error al obtener el JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>"); 
