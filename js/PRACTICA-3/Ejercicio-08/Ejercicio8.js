@@ -18,8 +18,6 @@ class Meteo {
             url: this.getUrlFor(ciudad),
             method: 'GET',
             success: function(datos){
-                    $("pre").text(JSON.stringify(datos, null, 2));
-                    
                     var stringDatos = "<ul><li>Ciudad: " + datos.name + "</li>";
                         stringDatos += "<li>Paí­s: " + datos.sys.country + "</li>";
                         stringDatos += "<li>Latitud: " + datos.coord.lat + " grados</li>";
