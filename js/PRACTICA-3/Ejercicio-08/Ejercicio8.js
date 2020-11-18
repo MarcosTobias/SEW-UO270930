@@ -46,10 +46,10 @@ class Meteo {
         $(insertarAntesDe).before(elemento);
     }
     verJSON(){
-        this.crearElemento("h4","Datos","footer"); // Crea un elemento con DOM 
-        this.crearElemento("p","","footer"); // Crea un elemento con DOM para los datos obtenidos con JSON
+        this.crearElemento("h4","Datos","#llanes"); // Crea un elemento con DOM 
+        this.crearElemento("p","","#llanes"); // Crea un elemento con DOM para los datos obtenidos con JSON
         this.cargarDatos();
-        $("button").attr("disabled","disabled");
+        $("#button").attr("disabled","disabled");
     }
 }
 var meteo = new Meteo();
