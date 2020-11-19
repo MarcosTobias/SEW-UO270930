@@ -37,7 +37,7 @@ class Noticias {
         //this.cargarDatos();
 
         var url = "http://api.openweathermap.org/data/2.5/weather?q=Cuenca,ES&units=metric&lang=es&APPID=290fd3ced9bb2176b491526dd1208f09";
-        var url = 'http://newsapi.org/v2/top-headlines?' +
+        var url = 'https://newsapi.org/v2/top-headlines?' +
           'country=us&' +
           'apiKey=40e57a011b9f4af8af52aac285232f11';
         /* var req = new Request(url);
