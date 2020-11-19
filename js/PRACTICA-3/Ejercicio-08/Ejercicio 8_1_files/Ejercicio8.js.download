@@ -1,6 +1,6 @@
 class Meteo {
     constructor(){
-        this.apikey = "290fd3ced9bb2176b491526dd1208f09";
+        this.apikey = "47b790fd0fc41878c80c57c9846132cb";
         this.codigoPais = "ES";
         this.unidades = "&units=metric";
         this.idioma = "&lang=es";
@@ -14,8 +14,7 @@ class Meteo {
             method: 'GET',
             success: function(datos){
 
-                    var stringDatos = "<img src=http://openweathermap.org/img/wn/" + datos.weather[0].icon + "@2x.png alt=\"icono del Tiempo\"/>";
-                        stringDatos += "<ul><li>Ciudad: " + datos.name + "</li>";
+                    var stringDatos = "<ul><li>Ciudad: " + datos.name + "</li>";
                         stringDatos += "<li>País: " + datos.sys.country + "</li>";
                         stringDatos += "<li>Latitud: " + datos.coord.lat + " grados</li>";
                         stringDatos += "<li>Longitud: " + datos.coord.lon + " grados</li>";

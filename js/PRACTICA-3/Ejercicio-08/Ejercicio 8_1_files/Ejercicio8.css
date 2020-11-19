@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+ul {
+    margin-bottom: 3em;
+}
+
+h4 {
+    border: 2px;
+    padding: 10px;
+    border-color: black;
+    border-style: solid;
+    width: 20%;
+}
