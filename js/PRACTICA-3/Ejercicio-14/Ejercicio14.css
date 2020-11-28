@@ -1,0 +1,29 @@
+body {
+  height: inherit;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #247E1D;
+}
+
+canvas { 
+  margin-top: 5em;
+  background: black; 
+  border-radius: 15px;
+}
+
+p {
+  margin-top: 5em;
+  font-size: larger;
+  margin-bottom: 2em;
+}
+
+div {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+input, button {
+  font-size: large;
+}

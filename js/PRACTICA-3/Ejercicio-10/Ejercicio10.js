@@ -1,75 +1,71 @@
 class Noticias {
     constructor(){
-        this.apikey = "40e57a011b9f4af8af52aac285232f11";
-        this.codigoPais = "country=es&";
-        this.url = 'http://newsapi.org/v2/top-headlines?country=us&apiKey=40e57a011b9f4af8af52aac285232f11';
+        this.apiKey = "40e57a011b9f4af8af52aac285232f11";
+        this.codigoPais = "country=us&";
+        
     }
-    cargarDatos(){
+    cargarDatos(tipo){
         $.ajax({
-            dataType: "JSON",
             url: this.url,
-            method: 'GET',
-            mode: 'no-cors',
-            credentials: 'same-origin',
             success: function(datos){
-                    $("pre").text(JSON.stringify(datos, null, 2));
+                console.log(datos);
+                    //$("pre").text(JSON.stringify(datos, null, 2));
                     
-                    
-                    //$("#p" + id).html(stringDatos);
+                    var results = datos.totalResults > 5 ? 5 : totalResults;
+
+                    var elemento = document.createElement("h2");
+                    elemento.innerHTML = tipo;
+                    $("#footer").before(elemento);
+
+                    for(var i = 0; i < results; i++) {
+                        var elemento = document.createElement("h3"); 
+                        elemento.innerHTML = datos.articles[i].title;
+                        $("#footer").before(elemento);
+
+                        var elemento = document.createElement("h4"); 
+                        var texto = datos.articles[i].publishedAt.split("T");
+                        elemento.innerHTML = "Fecha de publicación: " + texto[0] + " " + texto[1].substring(0, texto[1].length - 1);
+                        $("#footer").before(elemento);
+                        
+                        var elemento = document.createElement("img");
+                        elemento.setAttribute('src', datos.articles[i].urlToImage);
+                        elemento.setAttribute('alt', "Imagen relacionada con el artículo"); 
+                        $("#footer").before(elemento);
+
+                        var elemento = document.createElement("p"); 
+                        elemento.innerHTML = datos.articles[i].description.bold();
+                        $("#footer").before(elemento);
+
+                        var elemento = document.createElement("p"); 
+                        elemento.innerHTML = datos.articles[i].content;
+                        $("#footer").before(elemento);
+
+                        //$("#p" + id + i).html(stringDatos);
+                    }
                 },
             error:function(){
-                $("pre").remove();
-                //$("h4" + id).remove();
-                //$("p" + id).remove();
+                console.log("fallo");
                 }
         });
     }
-    crearElemento(tipoElemento, texto, insertarAntesDe){
-        var elemento = document.createElement(tipoElemento); 
-        elemento.innerHTML = texto;
-        $(insertarAntesDe).before(elemento);
-    }
 
     mostrar() {
-        //this.crearElemento("h4","Datos","#footer");
-        //this.crearElemento("p","","#footer");
-        //this.crearElemento("pre", "", "#footer");
-        //this.cargarDatos();
+        this.url = 'http://newsapi.org/v2/top-headlines?' + this.codigoPais + 'category=sports&apiKey=' + this.apiKey;
+        this.cargarDatos("Sports");
 
-        var url = "http://api.openweathermap.org/data/2.5/weather?q=Cuenca,ES&units=metric&lang=es&APPID=290fd3ced9bb2176b491526dd1208f09";
-        var url = 'http://newsapi.org/v2/top-headlines?' +
-          'country=us&' +
-          'apiKey=40e57a011b9f4af8af52aac285232f11';
-        /* var req = new Request(url);
-        fetch(req)
-         .then(function(response) {
-        console.log(response.json());
-        }) */
+        //this.crearElemento("pre", "", "#footer", 1);
 
-        /* var aux = fetch(url, {
-            mode: 'no-cors',
-            credentials: 'same-origin'
-            }).then(function(response){
-                console.log(response.json());
-            }); */
+        this.url = 'http://newsapi.org/v2/top-headlines?' + this.codigoPais + 'category=technology&apiKey=' + this.apiKey;
+        this.cargarDatos("Technology");
 
-            /* var aux = fetch(url, {
-                mode: 'no-cors',
-                credentials: 'same-origin'
-                }); */
+        this.url = 'http://newsapi.org/v2/top-headlines?' + this.codigoPais + 'category=general&apiKey=' + this.apiKey;
+        this.cargarDatos("General");
 
-                $.ajax({
-                    url:
-                      url,
-                    method: "GET",
-                    error: function() {
-                      console.log("fucked");
-                    },
-                    success: function(data) {
-                      alert("ole");
-                    }
-                  });
-    
+        this.url = 'http://newsapi.org/v2/top-headlines?' + this.codigoPais + 'category=health&apiKey=' + this.apiKey;
+        this.cargarDatos("Health");
+
+        this.url = 'http://newsapi.org/v2/top-headlines?' + this.codigoPais + 'category=entertainment&apiKey=' + this.apiKey;
+        this.cargarDatos("Entertainment");
     }
 }
 var noticias = new Noticias();

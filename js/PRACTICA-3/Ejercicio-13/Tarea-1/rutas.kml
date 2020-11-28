@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+<name>Ruta de las foces del río Pino</name>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+-5.518888888888889,43.10527777777778,544
+-5.517777777777778,43.103611111111114,635
+-5.518055555555556,43.100833333333334,639
+-5.5175,43.08027777777778,960
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</LineString>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Ruta del Cares</name>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+-4.8374999999999995,43.25388888888889,238
+-4.8647222222222215,43.25388888888889,937
+-4.886388888888888,43.2475,487
+-4.890833333333333,43.23638888888889,475
+-4.902777777777779,43.21361111111111,450
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</LineString>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Ruta de las Caras</name>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+-2.755,40.3675,733
+-2.7422222222222223,40.39722222222222,734
+-2.7552777777777777,40.401944444444446,734
+-2.75,40.39083333333333,762
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</LineString>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>

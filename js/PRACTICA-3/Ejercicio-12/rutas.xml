@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rutas SYSTEM "../Tarea-2/rutas.dtd">
+<rutas>
+  <ruta nombre ="Ruta de las foces del río Pino">
+    <tipo>Paisajística</tipo>
+    <dificultad>Baja</dificultad>
+    <fechaInicio>22/10/2020</fechaInicio>
+    <horaInicio>11:00</horaInicio>
+    <duracion>3 horas</duracion>
+    <agencia>Sin agencia</agencia>
+    <descripcion>Camino que durante siglos ha servido de comunicación entre los vecinos del valle del río San Isidro con los del valle del Río Aller, además de ser también paso hacia tierras leonesas
+    </descripcion>
+    <personasAdecuadas>Se puede ir con niños adecuados a caminar</personasAdecuadas>
+    <lugarInicio>El Pino</lugarInicio>
+    <direccionInicio>Barrio el Pino</direccionInicio>
+    <coordenadasInicio altura="544">43º 06' 19'' N 5º 31' 08'' W</coordenadasInicio>
+    <referencias>
+      <referencia>https://guiadeasturias.com/rutas-asturias/</referencia>
+      <referencia>https://www.desdeasturias.com/ruta-foces-del-rio-pino/</referencia>
+      <referencia>https://es.wikiloc.com/rutas-senderismo/foces-del-rio-pino-asturias-pr-as-31-9174351</referencia>
+    </referencias>
+    <recomendacion>8</recomendacion>
+    <hitos>
+      <hito nombre ="Fuente de la salud">
+        <descripcion>
+          Fuente cuyo agua sabe a hierro, lo que la gente de la zona considera un buen signo ya que este es bueno para la salud.
+        </descripcion>
+        <coordenadas altura="635">43º 06' 13'' N 5º 31' 04'' W</coordenadas>
+        <distanciaAnterior distancia="metros">130</distanciaAnterior>
+        <tiempoAnterior tiempo="minutos">2</tiempoAnterior>
+        <fotos>
+          <foto url="https://s1.wklcdn.com/image_14/433031/4663018/2351686Master.jpg">fuente</foto>
+        </fotos>
+        <videos>
+        </videos>
+      </hito>
+      <hito nombre="Molín de Peón">
+        <descripcion>
+          En su origen El Molín de Peón fue construido para cumplir las funciones de molino y batán y actualmente es un centro de alevinaje de trucha gestionado por la Asociación de Pescadores "El Maravayu"
+        </descripcion>
+        <coordenadas altura="639">43º 06' 03'' N 5º 31' 05'' W</coordenadas>
+        <distanciaAnterior distancia="metros">290</distanciaAnterior>
+        <tiempoAnterior tiempo="minutos">4</tiempoAnterior>
+        <fotos>
+          <foto url ="https://static1.elcomercio.es/www/multimedia/201911/22/media/cortadas/senda-verde-foyoso-aller-ruta-kACE-U90768024736PAG-624x385@El%20Comercio.jpg">molino y rio</foto>
+          <foto url ="https://s2.wklcdn.com/image_80/2428856/26431215/16880978Master.jpg">Entrada molino</foto>
+        </fotos>
+      </hito>
+      <hito nombre="Foz del río Pino">
+       <descripcion>
+          Corto desfiladero horadado por el río Pino formando numerosos rápidos y cascadas cerca del pueblo de Pino en el concejo asturiano de Aller
+       </descripcion>
+       <coordenadas altura="960">43º 4' 49'' N 5º 31' 03'' W</coordenadas>
+       <distanciaAnterior distancia="metros">2800</distanciaAnterior>
+        <tiempoAnterior tiempo="minutos">54</tiempoAnterior>
+        <fotos>
+         <foto url="https://2.bp.blogspot.com/-eStcaxgkvKU/WPUPlo9uMLI/AAAAAAAAJd8/shnFD2BW34w8XW_Gz0rIJkCgyPXU3DWnQCEw/s1600/P4131864.JPG">Rápidos</foto>
+         <foto url="https://www.turismoasturias.es/documents/11022/39312/MonumentoFocesPinu1.jpg/3a246dca-c0e9-4fce-98a4-cb4c0d5a5821?t=1389223701391">Final ruta</foto>
+         <foto url="https://st-listas.20minutos.es/images/2015-09/402219/4805149_640px.jpg?1445066135">Desfiladero</foto>
+          <foto url="https://richardxastur.files.wordpress.com/2012/02/43-foces-del-pino-a-foces-de-rio-aller.jpg">Puente de piedra</foto>
+          <foto url="https://4.bp.blogspot.com/-cRda35a2Jvs/WPUPlRL5owI/AAAAAAAAJd0/N54DAYp76lsJsVw5kxgb8LsT7WPA9s_agCEw/s1600/P4131860.JPG">Otros rápidos</foto>
+       </fotos>
+       <videos>
+         <video url="https://www.youtube.com/watch?v=RHF3CVU7DiI">Ruta</video>
+         <video url="https://www.youtube.com/watch?v=H4s7abIadQo">Rápidos</video>
+         <video url="https://www.facebook.com/jldelucasasturiasfotoafoto/videos/410869572819756/?v=410869572819756">Foces del Pino</video>
+       </videos>
+      </hito>
+    </hitos>
+  </ruta>
+  <ruta nombre ="Ruta del Cares">
+    <tipo>Paisajística</tipo>
+    <dificultad>Media</dificultad>
+    <fechaInicio>22/10/2020</fechaInicio>
+    <horaInicio>11:00</horaInicio>
+    <duracion>6 horas</duracion>
+    <agencia>Sin agencia</agencia>
+    <descripcion>
+      Ruta que transcurre por el cañçon que forma el río Cares a su paso entre las poblaciones de Caín de Valdeón y Poncebos, es decir, entre León y Asturias, en pleno corazón de los Picos de Europa
+    </descripcion>
+    <personasAdecuadas>No recomendable para mayores o niños menores de 12 años</personasAdecuadas>
+    <lugarInicio>Poncebos</lugarInicio>
+    <direccionInicio>Puente de Poncebos</direccionInicio>
+    <coordenadasInicio altura="238">43º 15' 14'' N 4º 50' 15'' W</coordenadasInicio>
+    <referencias>
+      <referencia>https://www.turismoasturias.es/descubre/naturaleza/rutas/senderismo/ruta-del-cares</referencia>
+      <referencia>https://www.escapadarural.com/blog/ruta-cares/</referencia>
+      <referencia>https://germenviajero.com/ruta-del-cares/#:~:text=La%20Ruta%20del%20Cares%20es%20una%20ruta%20que%20transcurre%20por,de%20los%20Picos%20de%20Europa.</referencia>
+    </referencias>
+    <recomendacion>9</recomendacion>
+    <hitos>
+      <hito nombre ="Los Collaos">
+        <descripcion>
+          Punto más alto de la ruta, con unas increibles vistas
+        </descripcion>
+        <coordenadas altura="937">43º 15' 14'' N 4º 51' 53'' W</coordenadas>
+        <distanciaAnterior distancia="metros">3400</distanciaAnterior>
+        <tiempoAnterior tiempo="minutos">77</tiempoAnterior>
+        <fotos>
+          <foto url="https://3.bp.blogspot.com/-BlD0z0nnSus/Vz-PuMCE7JI/AAAAAAAA7rg/HW172bw67lUa_VFrrVbhJH6cwav_FmNigCKgB/s640/2016-05-11_12-38-50_o.jpg">Los Collaos</foto>
+        </fotos>
+        <videos>
+        </videos>
+      </hito>
+      <hito nombre="La seta">
+       <descripcion>
+          Peculiar roca que tiene una forma de "seta"
+       </descripcion>
+       <coordenadas altura="487">43º 14' 51'' N 4º 53' 11'' W</coordenadas>
+       <distanciaAnterior distancia="metros">2000</distanciaAnterior>
+        <tiempoAnterior tiempo="minutos">39</tiempoAnterior>
+        <fotos>
+         <foto url="https://2.bp.blogspot.com/-fuOMjbcQJR0/Vz-ZaDqFwWI/AAAAAAAA7sY/f_OY8r7Mt2ElP5wMVMPgSkPQM3IC4AmiQCKgB/s640/DSC_0168.JPG">Piedra con forma de seta</foto>
+       </fotos>
+      </hito>
+      <hito nombre="Límite Asturias-Castilla-León">
+        <descripcion>
+          Frontera entre la comunidad de Asturias y la de Castilla-León
+        </descripcion>
+        <coordenadas altura="475">43º 14' 11'' N 4º 53' 27'' W</coordenadas>
+        <distanciaAnterior distancia="metros">3000</distanciaAnterior>
+        <tiempoAnterior tiempo="minutos">60</tiempoAnterior>
+        <fotos>
+          <foto url ="https://3.bp.blogspot.com/-xUBroWAzSok/Vz-hcimS3JI/AAAAAAAA7to/-lnsW9gYpRY_ddnYejzeuCOuSHLfoaAdgCKgB/s640/2016-05-11_17-56-18_o.jpg">Puente de piedra en la frontera</foto>
+        </fotos>
+      </hito>
+      <hito nombre="Caín">
+        <descripcion>
+          Final de la ruta, en el pueblo de Caín
+        </descripcion>
+        <coordenadas altura="450">43º 12' 49'' N 4º 54' 10'' W</coordenadas>
+        <distanciaAnterior distancia="metros">3000</distanciaAnterior>
+        <tiempoAnterior tiempo="minutos">60</tiempoAnterior>
+        <fotos>
+          <foto url ="https://3.bp.blogspot.com/-3NfKP9zmHyo/Vz-rks7MYYI/AAAAAAAA7xE/EBy8CvRVuuY2myDlx0PRz9FcImbAV41ywCKgB/s640/2016-05-11_15-50-27_o.jpg">Vistas desde Caín</foto>
+        </fotos>
+      </hito>
+    </hitos>
+  </ruta>
+  <ruta nombre ="Ruta de las Caras">
+    <tipo>Monumentos</tipo>
+    <dificultad>Baja</dificultad>
+    <fechaInicio>22/10/2020</fechaInicio>
+    <horaInicio>11:00</horaInicio>
+    <duracion>4 horas</duracion>
+    <agencia>Sin agencia</agencia>
+    <descripcion>
+      Museo al aire libre con numerosas esculturas talladas en la piedra en Cuenca
+    </descripcion>
+    <personasAdecuadas>Apto para todos los públicos</personasAdecuadas>
+    <lugarInicio>Buendía</lugarInicio>
+    <direccionInicio>Ruta de las Caras</direccionInicio>
+    <coordenadasInicio altura="733">40º 22' 03'' N 2º 45' 18'' W</coordenadasInicio>
+    <referencias>
+      <referencia>http://www.rutadelascaras.com/</referencia>
+      <referencia>https://parajesxvisitar.com/como-llegar-ruta-de-las-caras-buendia-cuenca/</referencia>
+      <referencia>https://www.senderismoguadalajara.es/ruta-de-las-caras-de-buendia/</referencia>
+    </referencias>
+    <recomendacion>7</recomendacion>
+    <hitos>
+      <hito nombre ="Moneda de la vida">
+        <descripcion>
+          Escultura que representa la moneda de la vida
+        </descripcion>
+        <coordenadas altura="734">40º 23' 50'' N 2º 44' 32'' W</coordenadas>
+        <distanciaAnterior distancia="metros">3400</distanciaAnterior>
+        <tiempoAnterior tiempo="minutos">42</tiempoAnterior>
+        <fotos>
+          <foto url="https://parajesxvisitar.com/wp-content/uploads/2017/04/primeras-caras-de-buendia.jpg">Moneda de la vida</foto>
+        </fotos>
+        <videos>
+        </videos>
+      </hito>
+      <hito nombre="Mirador al embalse">
+       <descripcion>
+          Mirador cerca del embalse para contemplar su grandeza
+       </descripcion>
+       <coordenadas altura="734">40º 24' 07'' N 2º 45' 19'' W</coordenadas>
+       <distanciaAnterior distancia="metros">2800</distanciaAnterior>
+        <tiempoAnterior tiempo="minutos">35</tiempoAnterior>
+        <fotos>
+         <foto url="https://parajesxvisitar.com/wp-content/uploads/2017/04/mirador-embalse-buendia-cuenca-300x225.jpg">Mirador al embalse</foto>
+       </fotos>
+      </hito>
+      <hito nombre="Dama del pantano">
+        <descripcion>
+          Escultura que representa a la dama del pantano
+        </descripcion>
+        <coordenadas altura="762">40º 23' 27'' N 2º 45' 00'' W</coordenadas>
+        <distanciaAnterior distancia="metros">1300</distanciaAnterior>
+        <fotos>
+          <foto url ="https://parajesxvisitar.com/wp-content/uploads/2017/04/dama-del-pantano-buendia-cuenca.jpg">Dama del pantano</foto>
+        </fotos>
+      </hito>
+    </hitos>
+  </ruta>
+</rutas>

@@ -1,0 +1,43 @@
+{
+  coord {
+    lon -5.84,
+    lat 43.36
+  },
+  weather [
+    {
+      id 800,
+      main Clear,
+      description cielo claro,
+      icon 01n
+    }
+  ],
+  base stations,
+  main {
+    temp 14.18,
+    feels_like 11.71,
+    temp_min 13,
+    temp_max 15,
+    pressure 1014,
+    humidity 76
+  },
+  visibility 10000,
+  wind {
+    speed 3.6,
+    deg 190
+  },
+  clouds {
+    all 0
+  },
+  dt 1606238556,
+  sys {
+    type 1,
+    id 6388,
+    country ES,
+    sunrise 1606202910,
+    sunset 1606236732
+  },
+  timezone 3600,
+  id 3114711,
+  name Oviedo,
+  cod 200
+}

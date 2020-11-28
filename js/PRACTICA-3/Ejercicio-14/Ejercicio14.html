@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <meta charset="UTF-8" />
+    <script src="Ejercicio14.js"></script>
+    <link rel="stylesheet" href="Ejercicio14.css" />
+</header>
+
+<body onload="canvas.init(true)">
+    <canvas id="can" width="800" height="550"></canvas>
+
+    <div>
+        <p>Elige una canción y se escuchará en bucle</p>
+        <input type="file" id="archivoAudio" accept="audio/*" onchange="canvas.leerArchivoAudio(this.files);">
+        <button onclick="canvas.start()">Start</button>
+        <button onclick="canvas.stop()">Stop</button>
+    </div>
+</body>
+
+</html>
