@@ -3,7 +3,6 @@
 body {
     background-color: #50006b;
     color: white;
-    background-image: url("../../../multimedia/body_background.png");
     text-align: justify;
 }
 
@@ -17,7 +16,6 @@ h1 {
     border-style: solid;
     border-width: 0.2em;
     background-color: #4E8AF4;
-    background-image: url("../../../multimedia/h1_background.png");
     margin-right: 15%;
     margin-left: 15%;
     margin-bottom: 0.5em;
@@ -45,7 +43,6 @@ label {
 
 /*001*/
 h2 {
-    background-image: url("../../../multimedia/h2_background.png");
     background-color: #8727E7;
     color: black;
     text-align: center;
@@ -79,7 +76,6 @@ table {
     font-size: 1em;
     text-align: center;
     border-collapse: collapse;
-    background-image: url("../../../multimedia/table_background.png");
     background-color: #f1cea3;
     color: black;
     margin-left: 20%;
