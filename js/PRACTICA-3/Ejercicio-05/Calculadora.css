@@ -69,10 +69,12 @@ div p {
     border-width: 2px;
     border-style: solid;
     background-color: white;
+    color: black;
 }
 
 li {
     color: black;
+    background-color: inherit;
     width: 13em;
     height: auto;
     text-align: right;
@@ -88,6 +90,7 @@ h1 {
 }
 
 article {
+    margin-top: 1em;
     width: 21.6em;
     height: auto;
     margin: auto;
