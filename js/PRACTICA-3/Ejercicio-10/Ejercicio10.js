@@ -25,7 +25,7 @@ class Noticias {
                     var texto = datos.articles[i].publishedAt.split("T");
                     var content = "<h3>" + datos.articles[i].title + "</h3>";
                         content += "<h4>" + "Fecha de publicación: " + texto[0] + " " + texto[1].substring(0, texto[1].length - 1) + "</h4>";
-                        content += "<img src=" +"\'" + datos.articles[i].urlToImage + "\'" + " alt=" + "\'Imagen relacionada con el artículo\'</img>";
+                        content += "<img src=" +"\'" + datos.articles[i].urlToImage + "\'" + " alt=" + "\'Imagen relacionada con el artículo\'" + "/>";
                         
                         if(datos.articles[i].description) {
                             content += "<p>" + datos.articles[i].description.bold() + "</p>";
