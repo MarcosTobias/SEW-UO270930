@@ -28,7 +28,7 @@ class Noticias {
                         content += "<img src=" +"\'" + datos.articles[i].urlToImage + "\'" + " alt=" + "\'Imagen relacionada con el artículo\'" + "/>";
                         
                         if(datos.articles[i].description) {
-                            content += "<p>" + datos.articles[i].description.bold() + "</p>";
+                            content += "<p><strong>" + datos.articles[i].description + "</strong></p>";
                         }
 
                         content += "<p>" + datos.articles[i].content + "</p>";
