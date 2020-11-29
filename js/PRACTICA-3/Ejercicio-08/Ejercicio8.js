@@ -38,7 +38,7 @@ class Meteo {
                     $("#ul" + id).html(stringDatos);
                 },
             error:function(){
-                $("h4" + id).remove();
+                $("h3" + id).remove();
                 $("p" + id).remove();
                 $("ul" + id).remove();
                 }
@@ -48,7 +48,7 @@ class Meteo {
         var elemento = document.createElement(tipoElemento); 
         elemento.innerHTML = texto;
         elemento.setAttribute("id", tipoElemento + id);
-        $(insertarAntesDe).before(elemento);
+        $(insertarAntesDe).after(elemento);
     }
 
     mostrar() {
@@ -58,17 +58,17 @@ class Meteo {
     }
 
     mostrarCuenca() {
-        this.crearElemento("h4","Datos","#llanes", 1);
-        this.crearElemento("p","","#llanes", 1);
-        this.crearElemento("ul","","#llanes", 1);
+        this.crearElemento("h3","Datos","#cuenca", 1);
+        this.crearElemento("p","","#h31", 1);
+        this.crearElemento("ul","","#p1", 1);
 
         this.cargarDatos(1);
     }
 
     mostrarLlanes() {
-        this.crearElemento("h4","Datos","#felechosa", 2);
-        this.crearElemento("p","","#felechosa", 2);
-        this.crearElemento("ul","","#felechosa", 2);
+        this.crearElemento("h3","Datos","#llanes", 2);
+        this.crearElemento("p","","#h32", 2);
+        this.crearElemento("ul","","#p2", 2);
 
         this.ciudad = "Llanes";
         this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
@@ -77,9 +77,9 @@ class Meteo {
     }
 
     mostrarFelechosa() {
-        this.crearElemento("h4","Datos","#footer", 3);
-        this.crearElemento("p","","#footer", 3);
-        this.crearElemento("ul","","#footer", 3);
+        this.crearElemento("h3","Datos","#felechosa", 3);
+        this.crearElemento("p","","#h33", 3);
+        this.crearElemento("ul","","#p3", 3);
 
         this.ciudad = "Felechosa";
         this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
