@@ -15,35 +15,30 @@ class Noticias {
 
                     var elemento = document.createElement("h2");
                     elemento.innerHTML = tipo;
-                    elemento.setAttribute("id", "h2");
-                    $("#h1").after(elemento);
+                    $("#footer").before(elemento);
 
                     for(var i = 0; i < results; i++) {
                         var elemento = document.createElement("h3"); 
-                        elemento.setAttribute("id", "h3");
                         elemento.innerHTML = datos.articles[i].title;
-                        $("#h2").after(elemento);
+                        $("#footer").before(elemento);
 
                         var elemento = document.createElement("h4"); 
                         var texto = datos.articles[i].publishedAt.split("T");
                         elemento.innerHTML = "Fecha de publicación: " + texto[0] + " " + texto[1].substring(0, texto[1].length - 1);
-                        elemento.setAttribute("id", "h4");
-                        $("#h3").after(elemento);
+                        $("#footer").before(elemento);
                         
                         var elemento = document.createElement("img");
                         elemento.setAttribute('src', datos.articles[i].urlToImage);
                         elemento.setAttribute('alt', "Imagen relacionada con el artículo"); 
-                        elemento.setAttribute("id", "img");
-                        $("#h4").after(elemento);
+                        $("#footer").before(elemento);
 
                         var elemento = document.createElement("p"); 
                         elemento.innerHTML = datos.articles[i].description.bold();
-                        elemento.setAttribute("id", "p1");
-                        $("#img").after(elemento);
+                        $("#footer").before(elemento);
 
                         var elemento = document.createElement("p"); 
                         elemento.innerHTML = datos.articles[i].content;
-                        $("#p1").before(elemento);
+                        $("#footer").before(elemento);
 
                         //$("#p" + id + i).html(stringDatos);
                     }
