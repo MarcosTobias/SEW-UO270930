@@ -1,7 +1,6 @@
 h1 {
     margin: 0 auto;
     text-align: center;
-    margin-top: 1em;
     padding: 1em;
 }
 
@@ -16,6 +15,7 @@ article {
 body {
     background-color: rgb(245, 189, 167);
     color:black;
+    margin-top: 1em;
 }
 
 nav {
