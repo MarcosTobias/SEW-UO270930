@@ -9,6 +9,11 @@
 <body onload="canvas.init(true)">
     <canvas id="can" width="800" height="550"></canvas>
 
+    <div class="a1">
+        <button class="mobile1" id="buttonUp">^</button>
+        <button class="mobile1" id="buttonDown">v</button>
+    </div>
+
     <div>
         <p>Elige una canción y se escuchará en bucle</p>
         <input type="file" id="archivoAudio" accept="audio/*" onchange="canvas.leerArchivoAudio(this.files);">

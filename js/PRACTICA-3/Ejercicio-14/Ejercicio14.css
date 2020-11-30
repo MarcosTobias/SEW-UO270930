@@ -27,3 +27,23 @@ div {
 input, button {
   font-size: large;
 }
+
+.a1 {
+  margin-left: 5em;
+  margin-bottom: 5em;
+}
+
+.mobile1 {
+  float: left;
+}
+
+.mobile1 {
+  float: left;
+  width: 6em;
+  height: 6em;
+  margin-left: 2em;
+}
+
+label {
+  display: none;
+}

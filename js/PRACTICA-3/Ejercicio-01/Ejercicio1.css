@@ -1,33 +1,33 @@
 h1 {
-    color: darkgreen;
-    background-color: coral;
+    color: rgb(16, 201, 16);
+    background-color: inherit;
     text-align: center;
 }
 
 h2 {
-    color: magenta;
-    background-color: coral;
+    color: rgb(100, 9, 100);
+    background-color: inherit;
     text-align: center;
 }
 
 h3 {
     color: blue;
-    background-color: coral;
+    background-color: inherit;
     text-align: center;
 }
 
 h4 {
-    color: white;
-    background-color: coral;
+    color: rgb(252, 247, 0);
+    background-color: inherit;
     text-align: center;
 }
 
 body {
-    background-color: coral;
+    background-color: rgb(128, 126, 126);
     color: black;
 }
 
 p {
     color: black;
-    background-color: coral;
+    background-color: inherit;
 }

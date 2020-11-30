@@ -27,10 +27,44 @@ class Canvas {
         this.score1 = 0;
         this.score2 = 0;
         this.firstGame = first;
-        this.frequency = setInterval(this.draw.bind(this), 5);
+        this.frequency = setInterval(this.draw.bind(this), 70);
 
         document.addEventListener("keydown", this.down.bind(this), false);
         document.addEventListener("keyup", this.up.bind(this), false);
+        this.buttonUp = document.getElementById("buttonUp");
+        this.buttonDown = document.getElementById("buttonDown");
+        this.buttonUp.addEventListener("touchstart", this.touchUp.bind(this), false);
+        this.buttonUp.addEventListener("touchend", this.touchUpEnd.bind(this), false);
+        this.buttonUp.addEventListener("touchcancel", this.touchUpEnd.bind(this), false);
+        this.buttonDown.addEventListener("touchstart", this.touchDown.bind(this), false);
+        this.buttonDown.addEventListener("touchend", this.touchDownEnd.bind(this), false);
+        this.buttonDown.addEventListener("touchcancel", this.touchDownEnd.bind(this), false);
+        this.canvas.addEventListener("touchstart", this.spaceY.bind(this), false);
+        this.canvas.addEventListener("touchend", this.spaceN.bind(this), false);
+    }
+
+    spaceN() {
+        this.spacePressed = false;
+    }
+
+    spaceY() {
+        this.spacePressed = true;
+    }
+
+    touchUp() {
+        this.wPressed = true;
+    }
+
+    touchUpEnd() {
+        this.wPressed = false;
+    }
+
+    touchDown() {
+        this.sPressed = true;
+    }
+
+    touchDownEnd() {
+        this.sPressed = false;
     }
 
     up(event) {
@@ -92,7 +126,7 @@ class Canvas {
         this.context.closePath();
 
         this.context.beginPath();
-        this.context.rect(this.canvas.width - this.p2Width, this.p2Y, this.canvas.width, this.p2Height);
+        this.context.rect(this.canvas.width - this.p2Width, this.p2Y, this.p2Width, this.p2Height);
         this.context.fillStyle = "#eee";
         this.context.fill();
         this.context.closePath();
