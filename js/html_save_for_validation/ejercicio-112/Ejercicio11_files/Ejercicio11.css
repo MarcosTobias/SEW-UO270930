@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: lightyellow;
+    color:inherit;
+    width: 50%;
+    padding: 30px;
+    margin: 2em auto;
+}
+
+h2 {
+    border: 2px;
+    padding: 10px;
+    border-color: black;
+    border-style: solid;
+    width: 50%;
+    text-align: center;
+    background-color: lightgray;
+    color: inherit;
+    margin-left: 10%;
+    margin-bottom: 2em;
+}
+
+h3 {
+    margin-left: 15%;
+    margin-bottom: 2em;
+    text-decoration: underline;
+}
+
+body {
+    background-color: coral;
+    color:black;
+}
+
+li {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: large;
+    margin-top: 1em;
+}
+
+button {
+    margin-left: 50%;
+}

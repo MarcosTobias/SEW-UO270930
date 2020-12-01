@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- saved from url=(0117)file:///C:/Users/Marcos/Documents/Trabajos%202020-2021/Labs/SEW/sew-repos/js/PRACTICA-3/Ejercicio-12/Ejercicio12.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Ejercicio 12</title>
+    <link rel="stylesheet" href="./Ejercicio12_files/Ejercicio12.css">
+</head>
+<body>
+    <h1>Visualizador de propiedades</h1>
+    <h2>Elija un archivo de texto, JSON o XML</h2>
+    
+    <label for="archivoTexto">inutil</label>
+    <input type="file" id="archivoTexto" onchange="lector.leerArchivoTexto(this.files);"><h3 id="nombre">Nombre del archivo: ejemploJson.json</h3><p id="tamaño">Tamaño del archivo: 594 bytes</p><p id="tipo">Tipo del archivo: application/json</p><p id="ultima">Fecha de la última modificación: Tue Nov 24 2020 18:26:05 GMT+0100 (Central European Standard Time)</p><p id="contenido">Contenido del archivo:</p><p id="areaVisualizacion">{<br>  coord {<br>    lon -5.84,<br>    lat 43.36<br>  },<br>  weather [<br>    {<br>      id 800,<br>      main Clear,<br>      description cielo claro,<br>      icon 01n<br>    }<br>  ],<br>  base stations,<br>  main {<br>    temp 14.18,<br>    feels_like 11.71,<br>    temp_min 13,<br>    temp_max 15,<br>    pressure 1014,<br>    humidity 76<br>  },<br>  visibility 10000,<br>  wind {<br>    speed 3.6,<br>    deg 190<br>  },<br>  clouds {<br>    all 0<br>  },<br>  dt 1606238556,<br>  sys {<br>    type 1,<br>    id 6388,<br>    country ES,<br>    sunrise 1606202910,<br>    sunset 1606236732<br>  },<br>  timezone 3600,<br>  id 3114711,<br>  name Oviedo,<br>  cod 200<br>}</p><p id="errorArchivo"></p>
+
+    
+    <p id="tamano"></p>
+    
+    <p id="ultimaMod"></p>
+    
+    <p id="areaTexto"></p>
+    <p id="errorLectura"></p>
+    
+
+</body></html>
