@@ -20,6 +20,7 @@
 
     <div>
         <p>Elige una canción y se escuchará en bucle</p>
+        <label for="archivoAudio">useless</label>
         <input type="file" id="archivoAudio" accept="audio/*" onchange="canvas.leerArchivoAudio(this.files);">
         <button onclick="canvas.start()" id="start">Start</button>
         <button onclick="canvas.stop()">Stop</button>

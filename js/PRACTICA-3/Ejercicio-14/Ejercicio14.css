@@ -4,7 +4,7 @@ body {
   max-width: 800px;
   margin: 0 auto;
   background: #247E1D;
-  color: black;
+  color: white;
 }
 
 canvas { 
@@ -18,6 +18,10 @@ p {
   margin-top: 1em;
   font-size: larger;
   margin-bottom: 2em;
+}
+
+label {
+  display: none;
 }
 
 div {
