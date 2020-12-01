@@ -39,11 +39,11 @@ class Canvas {
         this.buttonDown.addEventListener("touchcancel", this.touchDownEnd.bind(this), false);
         this.canvas.addEventListener("touchstart", this.spaceY.bind(this), false);
         this.canvas.addEventListener("touchend", this.spaceN.bind(this), false);
-        window.addEventListener('keydown', function(e) {
-            if(e.key == ' ' && e.target == document.body) {
-              e.preventDefault();
+        window.addEventListener('keydown', function (e) {
+            if (e.key == ' ' && e.target == document.body) {
+                e.preventDefault();
             }
-          });
+        });
     }
 
     spaceN() {
@@ -229,15 +229,15 @@ class Canvas {
         if (this.x > this.canvas.width / 2 && this.y < this.p2Y) {
             if (this.p2Y < 0) {
                 this.p2Y = 0;
-            } else if(probability > 60) {
+            } else if (probability > 60) {
                 this.p2Y -= 3;
             }
 
-            
+
         } else if (this.x > this.canvas.width / 2 && this.y > this.p2Y) {
             if (this.p2Y + this.p2Height > this.canvas.height) {
                 this.p2Y = this.canvas.height - this.p2Height;
-            }else if(probability > 60) {
+            } else if (probability > 60) {
                 this.p2Y += 3;
             }
         }
@@ -302,7 +302,7 @@ class Canvas {
     }
 
     stop() {
-        if(this.source) {
+        if (this.source) {
             this.source.stop();
         }
     }

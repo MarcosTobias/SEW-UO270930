@@ -1,7 +1,7 @@
 class MapaMaravilla {
   constructor() {
-      this.current = "giza";
-   }
+    this.current = "giza";
+  }
 
   initMap() {
     this.closeButGiza();

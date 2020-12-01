@@ -1,90 +1,93 @@
 <!DOCTYPE html>
-<html lang = "es">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width = device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-width, initial-scale=1.0" />
     <title lang="es">Calculadora Científica</title>
-    <link rel="stylesheet" href="CalculadoraCientifica.css"/>
+    <link rel="stylesheet" href="CalculadoraCientifica.css" />
     <script src="CalculadoraCientifica.js"></script>
 </head>
+
 <body>
     <h1 lang="es">Calculadora científica</h1>
 
     <article lang="es">
         <h2>Cabecera inutil</h2>
-    <p lang="es">
-        <label for="screen" lang="es">
-            Calculadora basica
-        </label>
-        <input type="text" id="screen" disabled value="0"/>
-    </p>
-    
-    <div>
+        <p lang="es">
+            <label for="screen" lang="es">
+                Calculadora basica
+            </label>
+            <input type="text" id="screen" disabled value="0" />
+        </p>
+
         <div>
-            <div><button onclick="calculadora.mc()">mc</button></div>
-            <div><button onclick="calculadora.mrc()">mrc</button></div>
-            <div><button onclick="calculadora.mMenos()">m-</button></div>
-            <div><button onclick="calculadora.mMas()">m+</button></div>
-            <div><button onclick="calculadora.sin()">sin</button></div>
+            <div>
+                <div><button onclick="calculadora.mc()">mc</button></div>
+                <div><button onclick="calculadora.mrc()">mrc</button></div>
+                <div><button onclick="calculadora.mMenos()">m-</button></div>
+                <div><button onclick="calculadora.mMas()">m+</button></div>
+                <div><button onclick="calculadora.sin()">sin</button></div>
+            </div>
+            <div>
+                <div><button onclick="calculadora.cos()">cos</button></div>
+                <div><button onclick="calculadora.tan()">tan</button></div>
+                <div><button onclick="calculadora.asin()">asin</button></div>
+                <div><button onclick="calculadora.acos()">acos</button></div>
+                <div><button onclick="calculadora.atan()">atan</button></div>
+            </div>
+            <div>
+
+                <div><button onclick="calculadora.exp()">eˣ</button></div>
+                <div><button onclick="calculadora.pi()">π</button></div>
+                <div><button onclick="calculadora.e()">e</button></div>
+                <div><button onclick="calculadora.borrar()">C</button></div>
+                <div><button onclick="calculadora.back()">DEL</button></div>
+            </div>
+            <div>
+                <div><button onclick="calculadora.square()">x²</button></div>
+                <div><button onclick="calculadora.oneOverX()">1/x</button></div>
+                <div><button onclick="calculadora.module()">|x|</button></div>
+                <div><button onclick="calculadora.exponential()">exp</button></div>
+                <div><button onclick="calculadora.remainder()">mod</button></div>
+            </div>
+            <div>
+                <div><button onclick="calculadora.sqrt()">²√x</button></div>
+                <div><button onclick="calculadora.leftP()">)</button></div>
+                <div><button onclick="calculadora.rightP()">(</button></div>
+                <div><button onclick="calculadora.factorial()">n!</button></div>
+                <div><button onclick="calculadora.division()">/</button></div>
+            </div>
+            <div>
+                <div><button onclick="calculadora.pow()">xʸ</button></div>
+                <div><button onclick="calculadora.digitos(7)">7</button></div>
+                <div><button onclick="calculadora.digitos(8)">8</button></div>
+                <div><button onclick="calculadora.digitos(9)">9</button></div>
+                <div><button onclick="calculadora.multiplicacion()">*</button></div>
+            </div>
+            <div>
+                <div><button onclick="calculadora.pow10()">10ˣ</button></div>
+                <div><button onclick="calculadora.digitos(4)">4</button></div>
+                <div><button onclick="calculadora.digitos(5)">5</button></div>
+                <div><button onclick="calculadora.digitos(6)">6</button></div>
+                <div><button onclick="calculadora.resta()">-</button></div>
+            </div>
+            <div>
+                <div><button onclick="calculadora.log10()">log</button></div>
+                <div><button onclick="calculadora.digitos(1)">1</button></div>
+                <div><button onclick="calculadora.digitos(2)">2</button></div>
+                <div><button onclick="calculadora.digitos(3)">3</button></div>
+                <div><button onclick="calculadora.suma()">+</button></div>
+            </div>
+            <div>
+                <div><button onclick="calculadora.ln()">ln</button></div>
+                <div><button onclick="calculadora.cbrt()">³√x</button></div>
+                <div><button onclick="calculadora.digitos(0)">0</button></div>
+                <div><button onclick="calculadora.punto()">.</button></div>
+                <div><button onclick="calculadora.igual()">=</button></div>
+            </div>
         </div>
-        <div>
-            <div><button onclick="calculadora.cos()">cos</button></div>
-            <div><button onclick="calculadora.tan()">tan</button></div>
-            <div><button onclick="calculadora.asin()">asin</button></div>
-            <div><button onclick="calculadora.acos()">acos</button></div>
-            <div><button onclick="calculadora.atan()">atan</button></div>
-        </div>
-        <div>
-            
-            <div><button onclick="calculadora.exp()">eˣ</button></div>
-            <div><button onclick="calculadora.pi()">π</button></div>
-            <div><button onclick="calculadora.e()">e</button></div>
-            <div><button onclick="calculadora.borrar()">C</button></div>
-            <div><button onclick="calculadora.back()">DEL</button></div>
-        </div>
-        <div>
-            <div><button onclick="calculadora.square()">x²</button></div>
-            <div><button onclick="calculadora.oneOverX()">1/x</button></div>
-            <div><button onclick="calculadora.module()">|x|</button></div>
-            <div><button onclick="calculadora.exponential()">exp</button></div>
-            <div><button onclick="calculadora.remainder()">mod</button></div>
-        </div>
-        <div>
-            <div><button onclick="calculadora.sqrt()">²√x</button></div>
-            <div><button onclick="calculadora.leftP()">)</button></div>
-            <div><button onclick="calculadora.rightP()">(</button></div>
-            <div><button onclick="calculadora.factorial()">n!</button></div>
-            <div><button onclick="calculadora.division()">/</button></div>
-        </div>
-        <div>
-            <div><button onclick="calculadora.pow()">xʸ</button></div>
-            <div><button onclick="calculadora.digitos(7)">7</button></div>
-            <div><button onclick="calculadora.digitos(8)">8</button></div>
-            <div><button onclick="calculadora.digitos(9)">9</button></div>
-            <div><button onclick="calculadora.multiplicacion()">*</button></div>
-        </div>
-        <div>
-            <div><button onclick="calculadora.pow10()">10ˣ</button></div>
-            <div><button onclick="calculadora.digitos(4)">4</button></div>
-            <div><button onclick="calculadora.digitos(5)">5</button></div>
-            <div><button onclick="calculadora.digitos(6)">6</button></div>
-            <div><button onclick="calculadora.resta()">-</button></div>
-        </div>
-        <div>
-            <div><button onclick="calculadora.log10()">log</button></div>
-            <div><button onclick="calculadora.digitos(1)">1</button></div>
-            <div><button onclick="calculadora.digitos(2)">2</button></div>
-            <div><button onclick="calculadora.digitos(3)">3</button></div>
-            <div><button onclick="calculadora.suma()">+</button></div>
-        </div>
-        <div>
-            <div><button onclick="calculadora.ln()">ln</button></div>
-            <div><button onclick="calculadora.cbrt()">³√x</button></div>
-            <div><button onclick="calculadora.digitos(0)">0</button></div>
-            <div><button onclick="calculadora.punto()">.</button></div>
-            <div><button onclick="calculadora.igual()">=</button></div>
-        </div>
-    </div>
-</article>
+    </article>
 </body>
+
 </html>

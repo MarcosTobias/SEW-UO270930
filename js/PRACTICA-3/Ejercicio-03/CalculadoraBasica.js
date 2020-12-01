@@ -2,10 +2,10 @@ class Calculadora {
     memoria = 0;
     reset = true;
     wasNumber = false;
-    constructor(){}
+    constructor() { }
 
     digitos(arg) {
-        if(!this.reset)
+        if (!this.reset)
             document.getElementById("screen").value = document.getElementById("screen").value + arg;
         else {
             document.getElementById("screen").value = arg;
@@ -16,7 +16,7 @@ class Calculadora {
     }
 
     punto() {
-        if(!this.reset)
+        if (!this.reset)
             document.getElementById("screen").value = document.getElementById("screen").value + ".";
         else {
             document.getElementById("screen").value = ".";
@@ -27,7 +27,7 @@ class Calculadora {
     }
 
     suma() {
-        if(!this.reset)
+        if (!this.reset)
             document.getElementById("screen").value = document.getElementById("screen").value + "+";
         else {
             document.getElementById("screen").value = "+";
@@ -38,7 +38,7 @@ class Calculadora {
     }
 
     resta() {
-        if(!this.reset)
+        if (!this.reset)
             document.getElementById("screen").value = document.getElementById("screen").value + "-";
         else {
             document.getElementById("screen").value = "-";
@@ -49,7 +49,7 @@ class Calculadora {
     }
 
     multiplicacion() {
-        if(!this.reset)
+        if (!this.reset)
             document.getElementById("screen").value = document.getElementById("screen").value + "*";
         else {
             document.getElementById("screen").value = "*";
@@ -60,7 +60,7 @@ class Calculadora {
     }
 
     division() {
-        if(!this.reset)
+        if (!this.reset)
             document.getElementById("screen").value = document.getElementById("screen").value + "/";
         else {
             document.getElementById("screen").value = "/";
@@ -71,14 +71,14 @@ class Calculadora {
     }
 
     mrc() {
-        if(isNaN(this.memoria))
+        if (isNaN(this.memoria))
             this.memoria = 0;
-        
-        if(this.wasNumber)
+
+        if (this.wasNumber)
             document.getElementById("screen").value = this.memoria.toString();
         else
             document.getElementById("screen").value = document.getElementById("screen").value + this.memoria.toString();
-        
+
         this.reset = false;
         this.wasNumber = true;
     }
@@ -86,14 +86,14 @@ class Calculadora {
     mMenos() {
         var x, res;
         x = document.getElementById("screen").value;
-        try { 
-            res =  parseInt(eval(x));
+        try {
+            res = parseInt(eval(x));
             this.memoria = this.memoria - res;
         }
-        catch(err) {
-             document.getElementById("screen").value = "Error = " + err;
+        catch (err) {
+            document.getElementById("screen").value = "Error = " + err;
         }
-        
+
         this.reset = true;
         this.wasNumber = false;
     }
@@ -101,14 +101,14 @@ class Calculadora {
     mMas() {
         var x, res;
         x = document.getElementById("screen").value;
-        try { 
-            res =  parseInt(eval(x));
+        try {
+            res = parseInt(eval(x));
             this.memoria = this.memoria + res;
         }
-        catch(err) {
-             document.getElementById("screen").value = "Error = " + err;
+        catch (err) {
+            document.getElementById("screen").value = "Error = " + err;
         }
-        
+
         this.reset = true;
         this.wasNumber = false;
     }
@@ -122,13 +122,13 @@ class Calculadora {
     igual() {
         var x;
         x = document.getElementById("screen").value;
-        try { 
+        try {
             document.getElementById("screen").value = eval(x);
         }
-        catch(err) {
-             document.getElementById("screen").value = "Error = " + err;
+        catch (err) {
+            document.getElementById("screen").value = "Error = " + err;
         }
-        
+
         this.reset = true;
         this.wasNumber = true;
     }

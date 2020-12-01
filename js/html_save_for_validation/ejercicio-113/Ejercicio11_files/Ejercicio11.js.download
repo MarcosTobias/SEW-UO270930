@@ -43,10 +43,8 @@ class Geolocalizacion {
         this.imagenMapa = url + centro + zoom + tamano + marcador + sensor + apiKey;
         var imagen = "<img src='"+this.imagenMapa+"'/>";
 
-        var elemento = document.createElement("section");
+        var elemento = document.getElementById("mapa");
         elemento.innerHTML = imagen;
-        $("h1").after(elemento);
-        $("button").remove();
     }
 }
 var miPosicion = new Geolocalizacion();

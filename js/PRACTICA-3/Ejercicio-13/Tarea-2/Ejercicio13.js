@@ -5,7 +5,8 @@ class Lector {
     else {
       var elemento = document.createElement("p");
       elemento.innerHTML = "Tu navegador no soporta el API File";
-      $("h2").after(elemento);
+      var header = document.getElementById("header");
+      header.appendChild(elemento);
     }
 
 
@@ -76,10 +77,10 @@ class Lector {
     var json = JSON.parse(text);
     var placemarks = []
 
-    for(var i = 0; i < 3; i++) {
+    for (var i = 0; i < 3; i++) {
       var aux = json.features[i].geometry.coordinates;
-      
-      for(const coord of aux) {
+
+      for (const coord of aux) {
         placemarks.push({ lat: +coord[1], lng: +coord[0] });
       }
     }

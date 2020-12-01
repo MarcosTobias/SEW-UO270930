@@ -1,25 +1,15 @@
 class Lector {
-    constructor(){
-      if (window.File && window.FileReader && window.FileList && window.Blob) 
-      {  
-      }
-      else {
-        var elemento = document.createElement("p"); 
-        elemento.innerHTML = "Tu navegador no soporta el API File";
-        $("h2").after(elemento);
-      }
+  constructor() {
+    if (window.File && window.FileReader && window.FileList && window.Blob) {
     }
+    else {
+      var elemento = document.createElement("p");
+      elemento.innerHTML = "Tu navegador no soporta el API File";
+      $("h2").after(elemento);
+    }
+  }
 
-    leerArchivoTexto(files) {
-
-      $("#nombre").remove();
-      $("#tamaño").remove();
-      $("#tipo").remove();
-      $("#ultima").remove();
-      $("#contenido").remove();
-      $("#areaVisualizacion").remove();
-      $("#errorArchivo").remove();
-
+  leerArchivoTexto(files) {
     var archivo = files[0];
 
     var nombre = document.createElement("h3");
@@ -38,52 +28,36 @@ class Lector {
     contenido.id = "contenido";
 
     var areaVisualizacion = document.createElement("p");
-    areaVisualizacion.id = "areaVisualizacion";
 
     var errorArchivo = document.createElement("p");
     errorArchivo.id = "errorArchivo";
 
-    nombre.innerText = "Nombre del archivo: " + archivo.name;
-    tamaño.innerText = "Tamaño del archivo: " + archivo.size + " bytes"; 
-    tipo.innerText = "Tipo del archivo: " + archivo.type;
-    ultima.innerText = "Fecha de la última modificación: " + archivo.lastModifiedDate;
-    contenido.innerText="Contenido del archivo:";
+    var nombre = "<p>Nombre del archivo: " + archivo.name + "</p";
+    var tamaño = "<p>Tamaño del archivo: " + archivo.size + " bytes</p>";
+    var tipo = "<p>Tipo del archivo: " + archivo.type + "</p>";
+    var ultima = "<p>Fecha de la última modificación: " + archivo.lastModifiedDate + "</p>";
+    var contenido = "<p>Contenido del archivo:</p>";
 
     var tipoTexto = /text.*/;
     var tipoXML = /xml.*/;
     var tipoJSON = /json.*/;
 
-      if(archivo.type.match(tipoTexto)) {
-          var lector = new FileReader();
-          lector.onload = function (evento) {
-            areaVisualizacion.innerText = lector.result;
-          }      
-          lector.readAsText(archivo);
+    if (archivo.type.match(tipoTexto) || archivo.type.match(tipoXML) || archivo.type.match(tipoJSON)) {
+      var lector = new FileReader();
+      lector.onload = function (evento) {
+        areaVisualizacion.innerText = lector.result;
 
-      } else if(archivo.type.match(tipoXML)) {
-        var lector = new FileReader();
-        lector.onload = function (evento) {
-          areaVisualizacion.innerText = lector.result;
-        }      
-        lector.readAsText(archivo);
-      } else if(archivo.type.match(tipoJSON)) {
-        var lector = new FileReader();
-        lector.onload = function (evento) {
-          areaVisualizacion.innerText = lector.result;
-        }      
-        lector.readAsText(archivo);
-      } else {
-        errorArchivo.innerText = "No se puede mostrar este tipo de archivo";
+        var elemento = document.getElementById("content");
+        elemento.innerHTML = nombre + tamaño + tipo + ultima + contenido;
+        elemento.appendChild(areaVisualizacion);
       }
-        
-    $("input").after(errorArchivo);
-    $("input").after(areaVisualizacion);
-    $("input").after(contenido);
-    $("input").after(ultima);
-    $("input").after(tipo);
-    $("input").after(tamaño);
-    $("input").after(nombre);
+      lector.readAsText(archivo);
 
+    } else {
+      errorArchivo.innerText = "No se puede mostrar este tipo de archivo";
+      var elemento = document.getElementById("content");
+      elemento.appendChild(errorArchivo);
+    }
   };
 }
 

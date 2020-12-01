@@ -1,5 +1,5 @@
 class Pila {
-    constructor(){
+    constructor() {
         this.pila = new Array();
     }
 
@@ -14,7 +14,7 @@ class Pila {
     show() {
         var stringPila = "<ol reversed>";
 
-        for(var i in this.pila) {
+        for (var i in this.pila) {
             stringPila += "<li>" + this.pila[i] + "</li>";
         }
 
@@ -28,7 +28,7 @@ class Calculadora {
     memoria = 0;
     wasDot = false;
     pila = new Pila();
-    constructor(){}
+    constructor() { }
 
     digitos(arg) {
         document.getElementById("screen").innerHTML = document.getElementById("screen").innerHTML + arg;
@@ -46,11 +46,11 @@ class Calculadora {
         var second = parseInt(this.pila.pop());
         var first = parseInt(this.pila.pop());
         var result = first + second;
-        if(isNaN(result)) {
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
-            if(!isNaN(second))
+            if (!isNaN(second))
                 this.pila.push(second);
 
             document.getElementById("pila").innerHTML = this.pila.show();
@@ -65,11 +65,11 @@ class Calculadora {
         var second = parseInt(this.pila.pop());
         var first = parseInt(this.pila.pop());
         var result = first - second;
-        if(isNaN(result)) {
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
-            if(!isNaN(second))
+            if (!isNaN(second))
                 this.pila.push(second);
 
             document.getElementById("pila").innerHTML = this.pila.show();
@@ -84,11 +84,11 @@ class Calculadora {
         var second = parseInt(this.pila.pop());
         var first = parseInt(this.pila.pop());
         var result = first * second;
-        if(isNaN(result)) {
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
-            if(!isNaN(second))
+            if (!isNaN(second))
                 this.pila.push(second);
 
             document.getElementById("pila").innerHTML = this.pila.show();
@@ -103,11 +103,11 @@ class Calculadora {
         var second = parseInt(this.pila.pop());
         var first = parseInt(this.pila.pop());
         var result = first / second;
-        if(isNaN(result)) {
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
-            if(!isNaN(second))
+            if (!isNaN(second))
                 this.pila.push(second);
 
             document.getElementById("pila").innerHTML = this.pila.show();
@@ -119,13 +119,13 @@ class Calculadora {
 
     borrar() {
         document.getElementById("screen").value = "";
-        
+
         this.wasDot = false;
     }
 
     enter() {
-        if(document.getElementById("screen").innerHTML.trim() == "") return;
-        if(this.wasDot) {
+        if (document.getElementById("screen").innerHTML.trim() == "") return;
+        if (this.wasDot) {
             alert("Debe escribir un numero después del punto antes de esta operación")
             return;
         }
@@ -139,9 +139,9 @@ class Calculadora {
         this.wasDot = false;
         var first = parseInt(this.pila.pop());
         var result = Math.sin(first);
-        if(isNaN(result)) {
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
 
             document.getElementById("pila").innerHTML = this.pila.show();
@@ -167,9 +167,9 @@ class Calculadora {
         this.wasDot = false;
         var first = parseInt(this.pila.pop());
         var result = Math.cos(first);
-        if(isNaN(result)) {
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
 
             document.getElementById("pila").innerHTML = this.pila.show();
@@ -183,9 +183,9 @@ class Calculadora {
         this.wasDot = false;
         var first = parseInt(this.pila.pop());
         var result = Math.tan(first);
-        if(isNaN(result)) {
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
 
             document.getElementById("pila").innerHTML = this.pila.show();
@@ -201,16 +201,16 @@ class Calculadora {
         var result;
         try {
             result = Math.asin(first);
-        } catch(Exception) {
+        } catch (Exception) {
             alert("No puedes realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
 
             document.getElementById("pila").innerHTML = this.pila.show();
             this.wasDot = false;
             return;
         }
-        if(isNaN(result)) {
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
             return;
         }
@@ -224,16 +224,16 @@ class Calculadora {
         var result;
         try {
             result = Math.acos(first);
-        } catch(Exception) {
+        } catch (Exception) {
             alert("No puedes realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
 
             document.getElementById("pila").innerHTML = this.pila.show();
             this.wasDot = false;
             return;
         }
-        if(isNaN(result)) {
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
             return;
         }
@@ -247,16 +247,16 @@ class Calculadora {
         var result;
         try {
             result = Math.atan(first);
-        } catch(Exception) {
+        } catch (Exception) {
             alert("No puedes realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
-                
+
             document.getElementById("pila").innerHTML = this.pila.show();
             this.wasDot = false;
             return;
         }
-        if(isNaN(result)) {
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
             return;
         }
@@ -268,9 +268,9 @@ class Calculadora {
         this.wasDot = false;
         var first = parseInt(this.pila.pop());
         var result = Math.exp(first);
-        if(isNaN(result)) {
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
 
             document.getElementById("pila").innerHTML = this.pila.show();
@@ -284,9 +284,9 @@ class Calculadora {
         this.wasDot = false;
         var first = parseInt(this.pila.pop());
         var result = Math.pow(first, 2);
-        if(isNaN(result)) {
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
 
             document.getElementById("pila").innerHTML = this.pila.show();
@@ -300,9 +300,9 @@ class Calculadora {
         this.wasDot = false;
         var first = parseInt(this.pila.pop());
         var result = 1 / first;
-        if(isNaN(result)) {
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
 
             document.getElementById("pila").innerHTML = this.pila.show();
@@ -315,10 +315,10 @@ class Calculadora {
     module() {
         this.wasDot = false;
         var first = parseInt(this.pila.pop());
-        var result = first < 0 ? first*-1 : first;
-        if(isNaN(result)) {
+        var result = first < 0 ? first * -1 : first;
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
 
             document.getElementById("pila").innerHTML = this.pila.show();
@@ -332,12 +332,12 @@ class Calculadora {
         this.wasDot = false;
         var second = parseInt(this.pila.pop());
         var first = parseInt(this.pila.pop());
-        var result = Math.pow(first, 10*second);
-        if(isNaN(result)) {
+        var result = Math.pow(first, 10 * second);
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
-            if(!isNaN(second))
+            if (!isNaN(second))
                 this.pila.push(second);
 
             document.getElementById("pila").innerHTML = this.pila.show();
@@ -352,11 +352,11 @@ class Calculadora {
         var second = parseInt(this.pila.pop());
         var first = parseInt(this.pila.pop());
         var result = first % second;
-        if(isNaN(result)) {
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
-            if(!isNaN(second))
+            if (!isNaN(second))
                 this.pila.push(second);
 
             document.getElementById("pila").innerHTML = this.pila.show();
@@ -370,9 +370,9 @@ class Calculadora {
         this.wasDot = false;
         var first = parseInt(this.pila.pop());
         var result = Math.sqrt(first);
-        if(isNaN(result)) {
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
 
             document.getElementById("pila").innerHTML = this.pila.show();
@@ -387,12 +387,12 @@ class Calculadora {
         var first = parseInt(this.pila.pop());
         var res = 1;
 
-        for(var i = 2; i <= first; i++) {
+        for (var i = 2; i <= first; i++) {
             res *= i;
         }
-        if(isNaN(res)) {
+        if (isNaN(res)) {
             alert("La pila no está en un estado para realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
 
             document.getElementById("pila").innerHTML = this.pila.show();
@@ -407,11 +407,11 @@ class Calculadora {
         var second = parseInt(this.pila.pop());
         var first = parseInt(this.pila.pop());
         var result = Math.pow(first, second);
-        if(isNaN(result)) {
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
-            if(!isNaN(second))
+            if (!isNaN(second))
                 this.pila.push(second);
 
             document.getElementById("pila").innerHTML = this.pila.show();
@@ -425,9 +425,9 @@ class Calculadora {
         this.wasDot = false;
         var first = parseInt(this.pila.pop());
         var result = Math.pow(10, first);
-        if(isNaN(result)) {
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
 
             document.getElementById("pila").innerHTML = this.pila.show();
@@ -441,25 +441,25 @@ class Calculadora {
         this.wasDot = false;
         var first = parseInt(this.pila.pop());
         var result = Math.log10(first);
-        if(isNaN(result)) {
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
 
             document.getElementById("pila").innerHTML = this.pila.show();
             return;
         }
         this.pila.push(result);
-        document.getElementById("pila").innerHTML = this.pila.show();x
+        document.getElementById("pila").innerHTML = this.pila.show(); x
     }
 
     ln() {
         this.wasDot = false;
         var first = parseInt(this.pila.pop());
         var result = Math.log(first);
-        if(isNaN(result)) {
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
 
             document.getElementById("pila").innerHTML = this.pila.show();
@@ -473,9 +473,9 @@ class Calculadora {
         this.wasDot = false;
         var first = parseInt(this.pila.pop());
         var result = Math.cbrt(first);
-        if(isNaN(result)) {
+        if (isNaN(result)) {
             alert("La pila no está en un estado para realizar esta operación")
-            if(!isNaN(first))
+            if (!isNaN(first))
                 this.pila.push(first);
 
             document.getElementById("pila").innerHTML = this.pila.show();

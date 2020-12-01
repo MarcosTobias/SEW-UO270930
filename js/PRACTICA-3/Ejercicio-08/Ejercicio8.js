@@ -1,5 +1,5 @@
 class Meteo {
-    constructor(){
+    constructor() {
         this.apikey = "290fd3ced9bb2176b491526dd1208f09";
         this.codigoPais = "ES";
         this.unidades = "&units=metric";
@@ -7,45 +7,45 @@ class Meteo {
         this.ciudad = "Cuenca";
         this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
     }
-    cargarDatos(id){
+    cargarDatos(id) {
         $.ajax({
             dataType: "json",
             url: this.url,
             method: 'GET',
-            success: function(datos){
+            success: function (datos) {
 
-                    var icono = "<img src=http://openweathermap.org/img/wn/" + datos.weather[0].icon + "@2x.png alt=\"icono del Tiempo\"/>";
-                    var stringDatos = "<li>Ciudad: " + datos.name + "</li>";
-                        stringDatos += "<li>País: " + datos.sys.country + "</li>";
-                        stringDatos += "<li>Latitud: " + datos.coord.lat + " grados</li>";
-                        stringDatos += "<li>Longitud: " + datos.coord.lon + " grados</li>";
-                        stringDatos += "<li>Temperatura: " + datos.main.temp + " grados Celsius</li>";
-                        stringDatos += "<li>Temperatura máxima: " + datos.main.temp_max + " grados Celsius</li>";
-                        stringDatos += "<li>Temperatura mí­nima: " + datos.main.temp_min + " grados Celsius</li>";
-                        stringDatos += "<li>Presión: " + datos.main.pressure + " milibares</li>";
-                        stringDatos += "<li>Humedad: " + datos.main.humidity + " %</li>";
-                        stringDatos += "<li>Amanece a las: " + new Date(datos.sys.sunrise *1000).toLocaleTimeString() + "</li>";
-                        stringDatos += "<li>Oscurece a las: " + new Date(datos.sys.sunset *1000).toLocaleTimeString() + "</li>";
-                        stringDatos += "<li>Dirección del viento: " + datos.wind.deg + " grados</li>";
-                        stringDatos += "<li>Velocidad del viento: " + datos.wind.speed + " metros/segundo</li>";
-                        stringDatos += "<li>Hora de la medida: " + new Date(datos.dt *1000).toLocaleTimeString() + "</li>";
-                        stringDatos += "<li>Fecha de la medida: " + new Date(datos.dt *1000).toLocaleDateString() + "</li>";
-                        stringDatos += "<li>Descripción: " + datos.weather[0].description + "</li>";
-                        stringDatos += "<li>Visibilidad: " + datos.visibility + " metros</li>";
-                        stringDatos += "<li>Nubosidad: " + datos.clouds.all + " %</li>";
-                    
-                    $('#p' + id).html(icono);
-                    $("#ul" + id).html(stringDatos);
-                },
-            error:function(){
+                var icono = "<img src=http://openweathermap.org/img/wn/" + datos.weather[0].icon + "@2x.png alt=\"icono del Tiempo\"/>";
+                var stringDatos = "<li>Ciudad: " + datos.name + "</li>";
+                stringDatos += "<li>País: " + datos.sys.country + "</li>";
+                stringDatos += "<li>Latitud: " + datos.coord.lat + " grados</li>";
+                stringDatos += "<li>Longitud: " + datos.coord.lon + " grados</li>";
+                stringDatos += "<li>Temperatura: " + datos.main.temp + " grados Celsius</li>";
+                stringDatos += "<li>Temperatura máxima: " + datos.main.temp_max + " grados Celsius</li>";
+                stringDatos += "<li>Temperatura mí­nima: " + datos.main.temp_min + " grados Celsius</li>";
+                stringDatos += "<li>Presión: " + datos.main.pressure + " milibares</li>";
+                stringDatos += "<li>Humedad: " + datos.main.humidity + " %</li>";
+                stringDatos += "<li>Amanece a las: " + new Date(datos.sys.sunrise * 1000).toLocaleTimeString() + "</li>";
+                stringDatos += "<li>Oscurece a las: " + new Date(datos.sys.sunset * 1000).toLocaleTimeString() + "</li>";
+                stringDatos += "<li>Dirección del viento: " + datos.wind.deg + " grados</li>";
+                stringDatos += "<li>Velocidad del viento: " + datos.wind.speed + " metros/segundo</li>";
+                stringDatos += "<li>Hora de la medida: " + new Date(datos.dt * 1000).toLocaleTimeString() + "</li>";
+                stringDatos += "<li>Fecha de la medida: " + new Date(datos.dt * 1000).toLocaleDateString() + "</li>";
+                stringDatos += "<li>Descripción: " + datos.weather[0].description + "</li>";
+                stringDatos += "<li>Visibilidad: " + datos.visibility + " metros</li>";
+                stringDatos += "<li>Nubosidad: " + datos.clouds.all + " %</li>";
+
+                $('#p' + id).html(icono);
+                $("#ul" + id).html(stringDatos);
+            },
+            error: function () {
                 $("h3" + id).remove();
                 $("p" + id).remove();
                 $("ul" + id).remove();
-                }
+            }
         });
     }
-    crearElemento(tipoElemento, texto, insertarAntesDe, id){
-        var elemento = document.createElement(tipoElemento); 
+    crearElemento(tipoElemento, texto, insertarAntesDe, id) {
+        var elemento = document.createElement(tipoElemento);
         elemento.innerHTML = texto;
         elemento.setAttribute("id", tipoElemento + id);
         $(insertarAntesDe).after(elemento);
@@ -58,17 +58,17 @@ class Meteo {
     }
 
     mostrarCuenca() {
-        this.crearElemento("h3","Datos","#cuenca", 1);
-        this.crearElemento("p","","#h31", 1);
-        this.crearElemento("ul","","#p1", 1);
+        this.crearElemento("h3", "Datos", "#cuenca", 1);
+        this.crearElemento("p", "", "#h31", 1);
+        this.crearElemento("ul", "", "#p1", 1);
 
         this.cargarDatos(1);
     }
 
     mostrarLlanes() {
-        this.crearElemento("h3","Datos","#llanes", 2);
-        this.crearElemento("p","","#h32", 2);
-        this.crearElemento("ul","","#p2", 2);
+        this.crearElemento("h3", "Datos", "#llanes", 2);
+        this.crearElemento("p", "", "#h32", 2);
+        this.crearElemento("ul", "", "#p2", 2);
 
         this.ciudad = "Llanes";
         this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
@@ -77,9 +77,9 @@ class Meteo {
     }
 
     mostrarFelechosa() {
-        this.crearElemento("h3","Datos","#felechosa", 3);
-        this.crearElemento("p","","#h33", 3);
-        this.crearElemento("ul","","#p3", 3);
+        this.crearElemento("h3", "Datos", "#felechosa", 3);
+        this.crearElemento("p", "", "#h33", 3);
+        this.crearElemento("ul", "", "#p3", 3);
 
         this.ciudad = "Felechosa";
         this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;

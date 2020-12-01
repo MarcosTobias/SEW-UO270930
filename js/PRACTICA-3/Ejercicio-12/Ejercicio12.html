@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <title>Ejercicio 12</title>
-    <link rel="stylesheet" href="Ejercicio12.css"/>
+    <link rel="stylesheet" href="Ejercicio12.css" />
     <script src="Ejercicio12.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
 <body>
     <h1>Visualizador de propiedades</h1>
     <h2>Elija un archivo de texto, JSON o XML</h2>
-    
+
+
     <label for="archivoTexto">inutil</label>
     <input type="file" id="archivoTexto" onchange="lector.leerArchivoTexto(this.files);">
 
-    <p id="nombre"></p>
-    <p id="tamano"></p>
-    <p id="tipo"></p>
-    <p id="ultimaMod"></p>
-    <p id="contenido"></p>
-    <p id="areaTexto"></p>
-    <p id="errorLectura"></p>
-    
+    <section id="content">
+    </section>
 </body>
+
 </html>

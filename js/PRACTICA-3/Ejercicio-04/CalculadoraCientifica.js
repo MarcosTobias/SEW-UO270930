@@ -2,10 +2,10 @@ class Calculadora {
     memoria = 0;
     reset = true;
     wasNumber = false;
-    constructor(){}
+    constructor() { }
 
     digitos(arg) {
-        if(!this.reset)
+        if (!this.reset)
             document.getElementById("screen").value = document.getElementById("screen").value + arg;
         else {
             document.getElementById("screen").value = arg;
@@ -16,7 +16,7 @@ class Calculadora {
     }
 
     punto() {
-        if(!this.reset)
+        if (!this.reset)
             document.getElementById("screen").value = document.getElementById("screen").value + ".";
         else {
             document.getElementById("screen").value = ".";
@@ -27,7 +27,7 @@ class Calculadora {
     }
 
     suma() {
-        if(!this.reset)
+        if (!this.reset)
             document.getElementById("screen").value = document.getElementById("screen").value + "+";
         else {
             document.getElementById("screen").value = "+";
@@ -38,7 +38,7 @@ class Calculadora {
     }
 
     resta() {
-        if(!this.reset)
+        if (!this.reset)
             document.getElementById("screen").value = document.getElementById("screen").value + "-";
         else {
             document.getElementById("screen").value = "-";
@@ -49,7 +49,7 @@ class Calculadora {
     }
 
     multiplicacion() {
-        if(!this.reset)
+        if (!this.reset)
             document.getElementById("screen").value = document.getElementById("screen").value + "*";
         else {
             document.getElementById("screen").value = "*";
@@ -60,7 +60,7 @@ class Calculadora {
     }
 
     division() {
-        if(!this.reset)
+        if (!this.reset)
             document.getElementById("screen").value = document.getElementById("screen").value + "/";
         else {
             document.getElementById("screen").value = "/";
@@ -71,14 +71,14 @@ class Calculadora {
     }
 
     mrc() {
-        if(isNaN(this.memoria))
+        if (isNaN(this.memoria))
             this.memoria = 0;
-        
-        if(this.wasNumber)
+
+        if (this.wasNumber)
             document.getElementById("screen").value = this.memoria.toString();
         else
             document.getElementById("screen").value = document.getElementById("screen").value + this.memoria.toString();
-        
+
         this.reset = false;
         this.wasNumber = true;
     }
@@ -86,14 +86,14 @@ class Calculadora {
     mMenos() {
         var x, res;
         x = document.getElementById("screen").value;
-        try { 
-            res =  parseInt(eval(x));
+        try {
+            res = parseInt(eval(x));
             this.memoria = this.memoria - res;
         }
-        catch(err) {
-             document.getElementById("screen").value = "Error = " + err;
+        catch (err) {
+            document.getElementById("screen").value = "Error = " + err;
         }
-        
+
         this.reset = true;
         this.wasNumber = false;
     }
@@ -101,14 +101,14 @@ class Calculadora {
     mMas() {
         var x, res;
         x = document.getElementById("screen").value;
-        try { 
-            res =  parseInt(eval(x));
+        try {
+            res = parseInt(eval(x));
             this.memoria = this.memoria + res;
         }
-        catch(err) {
-             document.getElementById("screen").value = "Error = " + err;
+        catch (err) {
+            document.getElementById("screen").value = "Error = " + err;
         }
-        
+
         this.reset = true;
         this.wasNumber = false;
     }
@@ -122,20 +122,20 @@ class Calculadora {
     igual() {
         var x;
         x = document.getElementById("screen").value;
-        try { 
+        try {
             document.getElementById("screen").value = eval(x);
         }
-        catch(err) {
-             document.getElementById("screen").value = "Error = " + err;
+        catch (err) {
+            document.getElementById("screen").value = "Error = " + err;
         }
-        
+
         this.reset = true;
         this.wasNumber = true;
     }
 }
 
 class CalculadoraCientifica extends Calculadora {
-    constructor(){
+    constructor() {
         super();
     }
 
@@ -147,7 +147,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             document.getElementById("screen").value = Math.sin(eval(document.getElementById("screen").value));
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 
@@ -156,7 +156,7 @@ class CalculadoraCientifica extends Calculadora {
     }
 
     pi() {
-        if(!this.wasNumber && !this.reset) {
+        if (!this.wasNumber && !this.reset) {
             document.getElementById("screen").value = document.getElementById("screen").value + Math.PI;
         } else {
             document.getElementById("screen").value = Math.PI;
@@ -167,7 +167,7 @@ class CalculadoraCientifica extends Calculadora {
     }
 
     e() {
-        if(!this.wasNumber && !this.reset) {
+        if (!this.wasNumber && !this.reset) {
             document.getElementById("screen").value = document.getElementById("screen").value + Math.E;
         } else {
             document.getElementById("screen").value = Math.E;
@@ -181,7 +181,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             document.getElementById("screen").value = Math.cos(eval(document.getElementById("screen").value));
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 
@@ -193,7 +193,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             document.getElementById("screen").value = Math.tan(eval(document.getElementById("screen").value));
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 
@@ -205,7 +205,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             document.getElementById("screen").value = Math.asin(eval(document.getElementById("screen").value));
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 
@@ -217,7 +217,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             document.getElementById("screen").value = Math.acos(eval(document.getElementById("screen").value));
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 
@@ -229,7 +229,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             document.getElementById("screen").value = Math.atan(eval(document.getElementById("screen").value));
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 
@@ -238,20 +238,20 @@ class CalculadoraCientifica extends Calculadora {
     }
 
     back() {
-        if(this.reset)
+        if (this.reset)
             document.getElementById("screen").value = "0";
         else
             document.getElementById("screen").value = document.getElementById("screen").value.substring(0, document.getElementById("screen").value.length - 1)
 
-        if(document.getElementById("screen").value.length == 0)
-        document.getElementById("screen").value = "0";
+        if (document.getElementById("screen").value.length == 0)
+            document.getElementById("screen").value = "0";
     }
 
     exp() {
         try {
             document.getElementById("screen").value = Math.exp(eval(document.getElementById("screen").value));
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 
@@ -263,7 +263,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             document.getElementById("screen").value = Math.pow(eval(document.getElementById("screen").value), 2);
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 
@@ -275,7 +275,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             document.getElementById("screen").value = 1 / eval(document.getElementById("screen").value);
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 
@@ -285,12 +285,12 @@ class CalculadoraCientifica extends Calculadora {
 
     module() {
         try {
-            if(eval(document.getElementById("screen").value) < 0)
+            if (eval(document.getElementById("screen").value) < 0)
                 document.getElementById("screen").value = eval(document.getElementById("screen").value) * -1;
             else
-                document.getElementById("screen").value = eval(document.getElementById("screen").value); 
+                document.getElementById("screen").value = eval(document.getElementById("screen").value);
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 
@@ -302,7 +302,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             document.getElementById("screen").value = eval(document.getElementById("screen").value) + "* Math.pow(10, ";
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 
@@ -314,7 +314,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             document.getElementById("screen").value = document.getElementById("screen").value + "(";
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 
@@ -326,7 +326,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             document.getElementById("screen").value = document.getElementById("screen").value + ")";
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 
@@ -338,7 +338,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             document.getElementById("screen").value = document.getElementById("screen").value + "%";
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 
@@ -350,7 +350,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             document.getElementById("screen").value = Math.sqrt(eval(document.getElementById("screen").value));
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 
@@ -364,13 +364,13 @@ class CalculadoraCientifica extends Calculadora {
         try {
             x = eval(document.getElementById("screen").value);
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 
         var res = 1;
 
-        for(var i = 2; i <= x; i++) {
+        for (var i = 2; i <= x; i++) {
             res *= i;
         }
 
@@ -384,7 +384,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             document.getElementById("screen").value = "Math.pow(" + eval(document.getElementById("screen").value) + ",";
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 
@@ -396,7 +396,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             document.getElementById("screen").value = Math.pow(10, eval(document.getElementById("screen").value));
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 
@@ -408,7 +408,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             document.getElementById("screen").value = Math.log10(eval(document.getElementById("screen").value));
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 
@@ -420,7 +420,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             document.getElementById("screen").value = Math.log(eval(document.getElementById("screen").value));
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 
@@ -432,7 +432,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             document.getElementById("screen").value = Math.cbrt(eval(document.getElementById("screen").value));
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("screen").value = "Error = " + err;
         }
 

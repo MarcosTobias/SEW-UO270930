@@ -24,14 +24,14 @@ class Noticias {
 
                     var texto = datos.articles[i].publishedAt.split("T");
                     var content = "<h3>" + datos.articles[i].title + "</h3>";
-                        content += "<h4>" + "Fecha de publicación: " + texto[0] + " " + texto[1].substring(0, texto[1].length - 1) + "</h4>";
-                        content += "<img src=" +"\'" + datos.articles[i].urlToImage + "\'" + " alt=" + "\'Imagen relacionada con el artículo\'" + "/>";
-                        
-                        if(datos.articles[i].description) {
-                            content += "<p><strong>" + datos.articles[i].description + "</strong></p>";
-                        }
+                    content += "<h4>" + "Fecha de publicación: " + texto[0] + " " + texto[1].substring(0, texto[1].length - 1) + "</h4>";
+                    content += "<img src=" + "\'" + datos.articles[i].urlToImage + "\'" + " alt=" + "\'Imagen relacionada con el artículo\'" + "/>";
 
-                        content += "<p>" + datos.articles[i].content + "</p>";
+                    if (datos.articles[i].description) {
+                        content += "<p><strong>" + datos.articles[i].description + "</strong></p>";
+                    }
+
+                    content += "<p>" + datos.articles[i].content + "</p>";
 
                     element.innerHTML = content;
                     element.setAttribute("id", tipo + i);
