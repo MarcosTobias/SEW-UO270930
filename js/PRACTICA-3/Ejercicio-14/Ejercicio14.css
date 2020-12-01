@@ -4,11 +4,13 @@ body {
   max-width: 800px;
   margin: 0 auto;
   background: #247E1D;
+  color: black;
 }
 
 canvas { 
   margin-top: 5em;
   background: black; 
+  color: inherit;
   border-radius: 15px;
 }
 
@@ -35,10 +37,6 @@ input {
 .a1 {
   margin-left: 5em;
   margin-bottom: 5em;
-}
-
-.mobile1 {
-  float: left;
 }
 
 .mobile1 {
