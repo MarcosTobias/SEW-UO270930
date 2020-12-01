@@ -1,5 +1,5 @@
 h1 {
-    color: rgb(16, 201, 16);
+    color: rgb(0, 126, 0);
     background-color: inherit;
     text-align: center;
 }
@@ -11,19 +11,19 @@ h2 {
 }
 
 h3 {
-    color: blue;
+    color: rgb(0, 0, 139);
     background-color: inherit;
     text-align: center;
 }
 
 h4 {
-    color: rgb(252, 247, 0);
+    color: rgb(34, 33, 0);
     background-color: inherit;
     text-align: center;
 }
 
 body {
-    background-color: rgb(128, 126, 126);
+    background-color: white;
     color: black;
 }
 
