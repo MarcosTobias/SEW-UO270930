@@ -36,15 +36,18 @@ input {
 
 .a1 {
   margin-left: 5em;
-  margin-bottom: 5em;
+  margin-bottom: 10em;
   user-select: none;
 }
 
-.mobile1 {
+.mobile1, .mobile2 {
   float: left;
   width: 6em;
   height: 6em;
-  margin-left: 2em;
+}
+
+.mobile1 {
+  margin-right: 12em;
 }
 
 #controles {
@@ -57,4 +60,8 @@ label {
 
 html {
   overflow-y: scroll;
+}
+
+#start {
+  margin-right: 1em;
 }
