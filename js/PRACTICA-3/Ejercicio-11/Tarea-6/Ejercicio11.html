@@ -1,15 +1,172 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <title>Ejercicio 11</title>
-    <link rel="stylesheet" href="Ejercicio11.css"/>
+    <link rel="stylesheet" href="Ejercicio11.css" />
     <script src="Ejercicio11.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <h1>Geolocalización</h1>
+    <h1>Maravillas del mundo</h1>
     <div id="mapa"></div>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=mapaDinamicoGoogle.initMap">
-    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=mapaMaravilla.initMap">
+        </script>
+
+    <div id="buttons">
+        <button onclick="mapaMaravilla.openGiza()">Pirámide de Giza</button>
+        <button onclick="mapaMaravilla.openChichen()">Chichén Itzá</button>
+        <button onclick="mapaMaravilla.openColiseo()">Coliseo de Roma</button>
+        <button onclick="mapaMaravilla.openMuralla()">La Gran Muralla China</button>
+        <button onclick="mapaMaravilla.openTaj()">Taj Mahal</button>
+    </div>
+
+
+    <section id="giza">
+        <h2>Pirámide de Giza</h2>
+        <p>Desde que se crearon hace más de 4000 años, las pirámides de Egipto han sido los más portentosos y
+            emblemáticos monumentos de la civilización egipcia, así como la maravilla más antigua y única que se
+            conserva, y en particular cabe destacar, las tres grandes pirámides de Giza, las tumbas de los reyes Keops,
+            Kefrén y Micerino, cuya construcción se remonta, para la gran mayoría de estudiosos, al periodo denominado
+            Imperio Antiguo de Egipto.</p>
+
+        <p>La Gran Pirámide de Giza, construida por Keops, es actualmente, una de las siete Maravillas del Mundo. Otro
+            destino a conocer, del periodo arcaico de Egipto, es La mastaba. Se trata de una construcción casi
+            prismática, que servía de sepultura de los soberanos.</p>
+    </section>
+
+    <section id="chichen">
+        <h2>Chichén Itzá</h2>
+        <p>La legendaria ciudad maya de Chichén Itzá, Patrimonio de la Humanidad declarada por la UNESCO desde 1988 y
+            Maravilla del Mundo desde 2007, sobresalió como centro cultural y político de la vieja civilización maya y
+            fue
+            uno de los asentamientos más extensos del centro-norte de la península de Yucatán. En su época de mayor
+            esplendor, fue la ciudad más poderosa de la península de Yucatán.</p>
+
+        <p>Los Itzáes se establecieron en Chichén Itzá en el siglo IX d.C. Se cree que eran mayas putunes o chontales.
+            Forjaron un amplio dominio con una cultura unificada cuyo centro era Chichén ltzá. Hacia fines del siglo X,
+            la
+            ciudad fue invadida por una tribu predominantemente guerrera: los toltecas. Esta última invasión trajo
+            consigo
+            una nueva serie de elementos culturales, sobresaliendo la representación del dios-serpiente Kukulkán. Hacia
+            1250
+            d.C., la ciudad fue abandonada por razones no del todo determinadas. Tan grande fue el poderío de esta
+            ciudad
+            que siglos después de su decadencia aún era sitio de peregrinación y adoración, e incluso hacia el año 1540
+            d.C.
+            Francisco de Montejo, fundador de Mérida, pensó levantar la capital allí.</p>
+    </section>
+
+    <section id="coliseo">
+        <h2>Coliseo romano</h2>
+        <p>Juegos de gladiadores, batallas navales, luchas con animales… El anfiteatro Flavio, más conocido como Coliseo
+            –quizá
+            por la colosal estatua de Nerón que se alzaba en las cercanías–, constituía parte del entretenimiento
+            público de la
+            antigua Roma. La famosa expresión latina panem et circenses (pan y circo) resumía todo lo que los
+            gobernantes de la
+            urbe requerían para manejar a la plebe y mantenerla entretenida. Hasta 50.000 espectadores podían participar
+            de las
+            sangrientas diversiones con que los emperadores cortejaban al pueblo. Son muchos los mitos en torno a la
+            lucha de
+            los gladiadores. Por ejemplo el gesto del pulgar hacia abajo que determinaba la muerte de un vencido o la
+            fórmula
+            con que los prisioneros condenados a luchar saludaban al emperador Claudio: «¡Ave César! Los que van a morir
+            te
+            saludan». Pero más allá de estos detalles, todo lo demás parece haber sido cierto, dramáticamente cierto: el
+            espectáculo de la sangre derramada exaltaba los ánimos de los espectadores, que quedaban atrapados por la
+            adicción
+            al anfiteatro.</p>
+
+        <p>La construcción del Coliseo empezó bajo el emperador Vespasiano, en torno al año 71 d.C., en un espacio que
+            había
+            quedado liberado tras el incendio de un anfiteatro anterior levantado casi cien años atrás. La inauguración
+            –cuyos
+            festejos se prolongaron durante cien días– se produjo en el año 80 y ya bajo el reinado de su hijo Tito.
+            Finalmente,
+            el emperador Domiciano culminó las obras en el 82, añadiendo un último piso. De estructura interior radial,
+            estaba
+            organizado en cinco niveles en los que se agrupaba la muchedumbre, con áreas delimitadas según la clase
+            social:
+            cuanto más cerca de la arena se hallaban mayor era el rango al que pertenecían.</p>
+
+        <p>Tras las célebres ejecuciones de cristianos, desde el siglo VI los juegos de gladiadores cayeron en desuso.
+            Después
+            el edificio sufriría cuatro terremotos, y ya entrada la Edad Media se convirtió en la cantera de Roma. Pese
+            a perder
+            casi por completo la parte sur durante siglos de expolio, aún hoy en día domina majestuosamente el paisaje
+            de Roma.
+            En la lejanía del oscuro siglo VIII, el historiador Beda el Venerable ya predijo: «Mientras siga en pie el
+            Coliseo,
+            seguirá en pie Roma. Cuando caiga el Coliseo, caerá Roma. Cuando caiga Roma, caerá el mundo».</p>
+    </section>
+
+    <section id="muralla">
+        <h2>La Gran Muralla China</h2>
+        <p>Desde el siglo IV a.C., las estepas al norte de China fueron ocupadas por pastores nómadas. Éstos dependían
+            de
+            sus vecinos sedentarios del sur para obtener todo lo que no les proporcionaba la estepa, sobre todo
+            productos
+            agrícolas con los que completar una alimentación basada en la carne y los lácteos. Su población era muy
+            inferior
+            a la de China, pero constituían una grave amenaza. Armados con potentes arcos compuestos y a lomos de sus
+            pequeños ponis esteparios, rápidos y muy resistentes, los guerreros nómadas se apresuraron a lanzar ataques
+            sobre los Estados del norte de China.</p>
+
+        <p>Los emperadores ensayaron diferentes estrategias para defenderse de la amenaza de estos nómadas. Una de ellas
+            era la muralla defensiva. El primer emperador, Qin Shihuang di (221-210 a.C.), construyó una línea de
+            fortificaciones que unía las levantadas por Estados anteriores y abarcaba toda la frontera. Luego, la
+            dinastía
+            Han trató de controlar a los bárbaros mediante sobornos (camuflados como subsidios) y campañas de conquista
+            en
+            la estepa, a la vez que construía una nueva Gran Muralla. Los nómadas, por su parte, pronto aprendieron que
+            podían utilizar sus incursiones no sólo para obtener botín, sino como método de presión para aumentar el
+            volumen
+            de los subsidios, en forma de objetos de lujo, especialmente seda.</p>
+
+        <p>Durante los siguientes mil años se mantuvo un cierto equilibrio entre chinos y bárbaros, hasta que a
+            principios
+            del siglo XIII un jefe mongol llamado Temujin consiguió unificar la estepa y reanudó el ciclo de ataques al
+            norte de China para obligar a los chinos a enviar subsidios y a comerciar. La resistencia encontrada llevó a
+            Temujin, convertido en emperador de los mongoles con el nombre de Gengis Kan, a lanzarse a la la conquista
+            de
+            China. Esta empresa sin precedentes para un nómada sería completada por su nieto Kublai Kan, quien además de
+            ser
+            kan de los mongoles fundó una nueva dinastía, la de los Yuan.</p>
+    </section>
+
+    <section id="taj">
+        <h2>El Taj Mahal</h2>
+        <p>El Taj Mahal es un mausoleo ubicado en la India, en la ciudad de Agra. Un monumento emblemático de este país,
+            es en
+            mármol blanco finamente cincelado. Fue construido entre 1631 y 1653 bajo el mando de Shah Jahan para
+            albergar la
+            tumba de su esposa, Mumtaz Mahal, quien murió en el parto durante el parto de su decimocuarto hijo. Mumtaz
+            Mahal
+            también fue llamado Arjumand Bano Begum. El Taj Mahal es una maravilla de la arquitectura mogol, en la
+            encrucijada
+            de los estilos islámico, iraní, persa e indio.</p>
+
+        <p>El Taj Mahal ha podido cruzar la historia sin sufrir ningún daño particular, lo que permite admirarla hoy
+            como lo
+            fue en su construcción. Si el mausoleo es el más conocido, no reduzca este monumento a esta construcción de
+            mármol,
+            el Taj Mahal es en realidad un conjunto de edificios, jardines, lagos y fuentes con simetría perfectamente
+            organizada contenida en Un terreno rectangular de 580 por 305 metros. Incluye dos mezquitas, una de las
+            cuales no
+            está en uso porque no está orientada hacia la Meca, la simetría obliga, tres puertas de estilo iraní, 3
+            edificios de
+            ladrillos rojos, una fuente central y 4 cuerpos de agua organizados en una cruz. El Taj Mahal es visitado
+            anualmente
+            por 4 millones de visitantes, lo que lo convierte en el monumento más visitado de la India. También es el
+            monumento
+            más famoso de la India, y su símbolo, como la Estatua de la Libertad es para los Estados Unidos, la Torre
+            Eiffel
+            para Francia o la estatua de Cristo Redentor para Brasil.</p>
+    </section>
 </body>
+
 </html>

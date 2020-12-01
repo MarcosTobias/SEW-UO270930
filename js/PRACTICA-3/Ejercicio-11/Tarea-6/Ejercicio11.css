@@ -15,6 +15,21 @@ h1 {
     width: 100%;
 }
 
+button {
+    height: 3em;
+    width: auto;
+    margin: 3em auto;
+}
+
+#buttons {
+    margin-left: 10%;
+}
+
+#mapa {
+    width: 50%;
+    margin: 0 auto;
+}
+
 h2 {
     border: 2px;
     padding: 10px;
@@ -35,4 +50,15 @@ img {
 body {
     background-color: coral;
     color:black;
+}
+
+p {
+    text-align: justify;
+    margin-left: 15%;
+    font-size: large;
+}
+
+section {
+    width: 80%;
+    margin-bottom: 10em;
 }
