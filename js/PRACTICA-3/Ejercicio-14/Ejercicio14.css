@@ -37,6 +37,7 @@ input {
 .a1 {
   margin-left: 5em;
   margin-bottom: 5em;
+  user-select: none;
 }
 
 .mobile1 {
