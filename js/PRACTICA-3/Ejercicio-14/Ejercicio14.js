@@ -19,15 +19,13 @@ class Canvas {
         this.dx = 2;
         this.wPressed = false;
         this.sPressed = false;
-        this.upPressed = false;
-        this.downPressed = false;
         this.haciaJugador2 = true;
         this.spacePressed = false;
         this.gameEnded = false;
         this.score1 = 0;
         this.score2 = 0;
         this.firstGame = first;
-        this.frequency = setInterval(this.draw.bind(this), 70);
+        this.frequency = setInterval(this.draw.bind(this), 10);
 
         document.addEventListener("keydown", this.down.bind(this), false);
         document.addEventListener("keyup", this.up.bind(this), false);
@@ -41,6 +39,11 @@ class Canvas {
         this.buttonDown.addEventListener("touchcancel", this.touchDownEnd.bind(this), false);
         this.canvas.addEventListener("touchstart", this.spaceY.bind(this), false);
         this.canvas.addEventListener("touchend", this.spaceN.bind(this), false);
+        window.addEventListener('keydown', function(e) {
+            if(e.key == ' ' && e.target == document.body) {
+              e.preventDefault();
+            }
+          });
     }
 
     spaceN() {
@@ -77,12 +80,6 @@ class Canvas {
             case "s":
                 this.sPressed = false;
                 break;
-            case "ArrowUp":
-                this.upPressed = false;
-                break;
-            case "ArrowDown":
-                this.downPressed = false;
-                break;
             case " ":
                 this.spacePressed = false;
         }
@@ -97,12 +94,6 @@ class Canvas {
             case "S":
             case "s":
                 this.sPressed = true;
-                break;
-            case "ArrowUp":
-                this.upPressed = true;
-                break;
-            case "ArrowDown":
-                this.downPressed = true;
                 break;
             case " ":
                 this.spacePressed = true;
@@ -234,15 +225,20 @@ class Canvas {
             }
         }
 
-        if (this.upPressed) {
-            this.p2Y -= 3;
+        var probability = Math.random() * 100;
+        if (this.x > this.canvas.width / 2 && this.y < this.p2Y) {
             if (this.p2Y < 0) {
                 this.p2Y = 0;
+            } else if(probability > 60) {
+                this.p2Y -= 3;
             }
-        } else if (this.downPressed) {
-            this.p2Y += 3;
+
+            
+        } else if (this.x > this.canvas.width / 2 && this.y > this.p2Y) {
             if (this.p2Y + this.p2Height > this.canvas.height) {
                 this.p2Y = this.canvas.height - this.p2Height;
+            }else if(probability > 60) {
+                this.p2Y += 3;
             }
         }
 

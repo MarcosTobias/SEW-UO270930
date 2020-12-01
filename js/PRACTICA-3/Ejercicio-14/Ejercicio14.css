@@ -13,7 +13,7 @@ canvas {
 }
 
 p {
-  margin-top: 5em;
+  margin-top: 1em;
   font-size: larger;
   margin-bottom: 2em;
 }
@@ -26,6 +26,10 @@ div {
 
 input, button {
   font-size: large;
+}
+
+input {
+  margin-bottom: 10em;
 }
 
 .a1 {
@@ -44,6 +48,14 @@ input, button {
   margin-left: 2em;
 }
 
+#controles {
+  margin-top: 6em;
+}
+
 label {
   display: none;
+}
+
+html {
+  overflow-y: scroll;
 }
