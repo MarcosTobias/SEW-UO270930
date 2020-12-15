@@ -1,0 +1,112 @@
+h1 {
+    text-align: center;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: lightyellow;
+    color:inherit;
+    width: 50%;
+    padding: 30px;
+    margin: 2em auto;
+}
+
+h4 {
+    margin-top: 2em;
+    text-decoration: underline;
+    font-size: large;
+    margin-left: 15%;
+}
+
+h3 {
+    margin-top: 2em;
+    font-size: large;
+    margin-left: 12%;
+    border: 2px;
+    padding: 5px;
+    border-color: black;
+    border-style: solid;
+    background: rgb(122, 219, 122);
+    color: inherit;
+    width: 50%;
+}
+
+h2 {
+    border: 2px;
+    padding: 10px;
+    border-color: black;
+    border-style: solid;
+    width: 50%;
+    text-align: center;
+    background-color: lightgray;
+    color: inherit;
+    margin-left: 10%;
+}
+
+body {
+    background-color: rgb(245, 189, 167);
+    color:black;
+}
+
+ul {
+    font-size: large;
+    margin-top: 4em;
+    margin-left: 15%;
+}
+
+li {
+    margin-bottom: 2em;
+}
+
+div {
+    text-align: center;
+}
+
+input {
+    font-size: large;
+    margin-bottom: 3em;
+}
+
+.long, .short {
+    width: 40em;
+}
+
+.long {
+    height: 5em;
+    overflow: scroll;
+}
+
+label {
+    display: block;
+    text-align: center;
+    font-size: large;
+}
+
+table, td, th {
+    border: 2px solid black;
+    font-size: larger;
+    padding: 1em;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.importante {
+    font-size: large;
+    margin-left: 15%;
+    margin-right: 50%;
+    margin-bottom: 2em;
+    padding: 5px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.no_importante {
+    font-size: large;
+    margin-left: 15%;
+    margin-right: 50%;
+    margin-bottom: 2em;
+}
