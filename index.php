@@ -10,6 +10,10 @@ $db = "bitacora";
 
 $dbconnect=mysqli_connect($hostname,$username,$password,$db);
 
+if(!$dbconnect) {
+  echo 'error';
+}
+
 if ($dbconnect->connect_error) {
   die("Database connection failed: " . $dbconnect->connect_error);
 }
@@ -26,8 +30,7 @@ if ($dbconnect->connect_error) {
 
 <?php
 
-$query = mysqli_query($dbconnect, "SELECT * FROM profesores")
-   or die (mysqli_error($dbconnect));
+$query = mysqli_query($dbconnect, "SELECT * FROM profesores");
 
 while ($row = mysqli_fetch_array($query)) {
   echo

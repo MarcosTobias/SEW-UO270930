@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="viewport" content="width = device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Calculadora Básica</title>
+    <link rel="stylesheet" href="CalculadoraBasica.css" />
+    <script src="CalculadoraBasica.js"></script>
+</head>
+
+<body>
+    <h1>Calculadora básica</h1>
+
+    <article lang="es">
+        <h2>cabecera inutil</h2>
+        <p>
+            <label for="screen">
+                Calculadora basica
+            </label>
+            <input type="text" id="screen" disabled value="0" name="pantalla" />
+        </p>
+
+        <div lang="es">
+            <div>
+                <div><button onclick="calculadora.mrc()">mrc</button></div>
+                <div><button onclick="calculadora.mMenos()">m-</button></div>
+                <div><button onclick="calculadora.mMas()">m+</button></div>
+                <div><button onclick="calculadora.division()">/</button></div>
+            </div>
+            <div>
+                <div><button onclick="calculadora.digitos(7)">7</button></div>
+                <div><button onclick="calculadora.digitos(8)">8</button></div>
+                <div><button onclick="calculadora.digitos(9)">9</button></div>
+                <div><button onclick="calculadora.multiplicacion()">*</button></div>
+            </div>
+            <div>
+                <div><button onclick="calculadora.digitos(4)">4</button></div>
+                <div><button onclick="calculadora.digitos(5)">5</button></div>
+                <div><button onclick="calculadora.digitos(6)">6</button></div>
+                <div><button onclick="calculadora.resta()">-</button></div>
+            </div>
+            <div>
+                <div><button onclick="calculadora.digitos(1)">1</button></div>
+                <div><button onclick="calculadora.digitos(2)">2</button></div>
+                <div><button onclick="calculadora.digitos(3)">3</button></div>
+                <div><button onclick="calculadora.suma()">+</button></div>
+            </div>
+            <div>
+                <div><button onclick="calculadora.digitos(0)">0</button></div>
+                <div><button onclick="calculadora.punto()">.</button></div>
+                <div><button onclick="calculadora.borrar()">C</button></div>
+                <div><button onclick="calculadora.igual()">=</button></div>
+            </div>
+        </div>
+    </article>
+</body>
+
+</html>
