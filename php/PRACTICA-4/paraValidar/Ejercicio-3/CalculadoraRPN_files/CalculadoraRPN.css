@@ -1,0 +1,116 @@
+div {
+    display: table;
+}
+
+div div {
+    display: table-row;
+}
+
+div div div {
+    display: table-cell;
+    padding: 0.2em;
+}
+
+div input {
+    padding: 10px;
+    width: 3.1em;
+    height: 2.2em;
+    color: black;
+    font-size: 1.25em;
+    background-color: white;
+    margin-right: 0;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+}
+
+div input:hover {
+    background-color: rgb(192, 190, 189);
+    color: black;
+}
+
+div input:active {
+    background-color: rgb(143, 139, 136);
+    color: black;
+    transform: translateY(4px);
+}
+
+ol {
+    padding: 10px;
+    width: 14.9em;
+    height: 10em;
+    margin-top: 0.3em;
+    margin-bottom: 0.2em;
+    text-align: right;
+    flex-direction: column-reverse;
+    overflow: scroll;
+    font-size: 20px;
+    margin-left: 0.47em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    background-color: rgb(97, 172, 97);
+    color: black;
+    cursor: default;
+}
+
+div p {
+    margin-left: 0.5em;
+    margin-top: 0.2em;
+    width: 20em;
+    height: 1em;
+    text-align: left;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    background-color: white;
+    color: black;
+}
+
+li {
+    color: black;
+    background-color: inherit;
+    width: 13em;
+    height: auto;
+    text-align: right;
+    font-size: 20px;
+    margin-left: 1em;
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em;
+}
+
+article {
+    width: 21.6em;
+    height: auto;
+    margin: auto;
+    padding: 1em;
+    background-color: grey;
+    color: black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 3px;
+    border-style: solid;
+    overflow: auto;
+}
+
+body {
+    background-color: rgb(245, 189, 167);
+    color:black;
+    margin-top: 5em;
+}
+
+h2 {
+    display: none;
+}
+
